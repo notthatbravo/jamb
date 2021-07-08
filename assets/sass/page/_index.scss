@@ -1,4 +1,5 @@
 section.hero {
+    padding-top: 10%;
     color: white;
     background-color: #006633;
     background-image: url(../../assets/img/hero.jpeg);
@@ -6,6 +7,7 @@ section.hero {
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
+    background-attachment: fixed;
 
     h1 {
         margin-right: 40%;
@@ -20,7 +22,7 @@ section.hero {
 
     a {
         display: inline-block;
-        width: 20%;
+        width: 15em;
 
 
         button {
@@ -41,5 +43,32 @@ section.hero {
 
     a:last-of-type {
         margin-left: 2.5%;
+    }
+}
+
+section.mission-vision {
+    div {
+        flex: 50%;
+
+        h2 {
+            font-size: 1.5em;
+            font-weight: 400;
+            color: $dark-green;
+            border-bottom: 5px solid $wine;
+            margin-right: 70%;
+        }
+
+        p {
+            margin: 5% 0;
+        }
+    }
+
+    div#left-column {
+        padding-right: 5%;
+        border-right: 1px solid black;
+    }
+
+    div#right-column {
+        padding-left: 5%;
     }
 }

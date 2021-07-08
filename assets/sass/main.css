@@ -35,25 +35,55 @@ section {
 }
 
 header {
-  padding: 1% 5%;
+  position: fixed;
+  top: 0;
+  width: 100%;
   color: #006633;
+  background: white;
+}
+header nav {
+  position: fixed;
+  right: 0;
+  width: 0;
+  height: 100vh;
+  padding: 0;
+  color: white;
+  background: #006633;
+  transition: 0.4s ease-in-out;
+}
+header nav div#main-links {
+  padding: 5%;
+  display: grid;
+  place-items: center;
+}
+header nav div#main-links a {
+  display: block;
+  margin: 20px 0;
+  font-size: 1.3em;
+  transition: 0.3s ease-in-out;
+}
+header nav div#main-links a:hover {
+  color: #ffcc00;
+}
+header nav.active {
+  width: 100%;
 }
 header img {
   width: 60%;
+  padding: 1% 5%;
 }
 header span#hamburger-menu-container {
-  float: right;
-  width: 8%;
-  margin-top: 0.5%;
-}
-header span#hamburger-menu-container label {
-  float: right;
-  display: flex;
-  flex-direction: column;
-  width: 60%;
+  position: fixed;
+  display: grid;
+  place-items: center;
+  top: 2%;
+  right: 2.5%;
+  width: 5%;
+  height: 50px;
   cursor: pointer;
 }
-header span#hamburger-menu-container label span {
+header span#hamburger-menu-container span {
+  display: block;
   background: #006633;
   border-radius: 10px;
   height: 3px;
@@ -62,24 +92,25 @@ header span#hamburger-menu-container label span {
 }
 header span#hamburger-menu-container span:nth-of-type(1) {
   width: 50%;
-  margin-left: 25%;
+  margin-left: 8%;
 }
 header span#hamburger-menu-container span:nth-of-type(2) {
   width: 100%;
 }
 header span#hamburger-menu-container span:nth-of-type(3) {
   width: 50%;
-  margin-left: 25%;
+  margin-left: 8%;
 }
-header span#hamburger-menu-container input[type=checkbox] {
-  display: none;
+header span#hamburger-menu-container .active {
+  background: #ffcc00;
 }
-header span#hamburger-menu-container input[type=checkbox]:checked ~ span:nth-of-type(2) {
+header span#hamburger-menu-container span:nth-of-type(2).active {
   width: 50%;
-  background: black;
+  margin-left: -10%;
 }
 
 section.hero {
+  padding-top: 10%;
   color: white;
   background-color: #006633;
   background-image: url(../../assets/img/hero.jpeg);
@@ -87,6 +118,7 @@ section.hero {
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
+  background-attachment: fixed;
 }
 section.hero h1 {
   margin-right: 40%;
@@ -99,7 +131,7 @@ section.hero p {
 }
 section.hero a {
   display: inline-block;
-  width: 20%;
+  width: 15em;
 }
 section.hero a button {
   width: 100%;
@@ -116,6 +148,27 @@ section.hero a button:hover {
 }
 section.hero a:last-of-type {
   margin-left: 2.5%;
+}
+
+section.mission-vision div {
+  flex: 50%;
+}
+section.mission-vision div h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #006633;
+  border-bottom: 5px solid #990033;
+  margin-right: 70%;
+}
+section.mission-vision div p {
+  margin: 5% 0;
+}
+section.mission-vision div#left-column {
+  padding-right: 5%;
+  border-right: 1px solid black;
+}
+section.mission-vision div#right-column {
+  padding-left: 5%;
 }
 
 /*# sourceMappingURL=main.css.map */

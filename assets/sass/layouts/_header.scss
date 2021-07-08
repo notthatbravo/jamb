@@ -1,9 +1,48 @@
 header {
-    padding: 1% 5%;
+    position: fixed;
+    top: 0;
+    width: 100%;
     color: $dark-green;
+    background: white;
+
+    // SIDEBAR STYLING BEGINS
+    nav {
+        position: fixed;
+        right: 0;
+        width: 0;
+        height: 100vh;
+        padding: 0;
+        color: white;
+        background: $dark-green;
+        transition: 0.4s ease-in-out;
+
+        div#main-links {
+            padding: 5%;
+            display: grid;
+            place-items: center;
+
+            a {
+                display: block;
+                margin: 20px 0;
+                font-size: 1.3em;
+                transition: .3s ease-in-out;
+            }
+
+            a:hover {
+                color: $bright-yellow;
+            }
+        }
+    }
+
+    nav.active {
+        width: 100%;
+    }
+
+    // SIDEBAR STYLING ENDS
 
     img {
         width: 60%;
+        padding: 1% 5%;
     }
 
     // Hamburger Icon Styling Begins
@@ -11,19 +50,17 @@ header {
     // Inshallah and Vibes
     // Edit: I did some major restructuring too!
         span#hamburger-menu-container {
-            float: right;
-            width: 8%;
-            margin-top: 0.5%;
+            position: fixed;
+            display: grid;
+            place-items: center;
+            top: 2%;
+            right: 2.5%;
+            width: 5%;
+            height: 50px;
+            cursor: pointer;
 
-            label{
-                float: right;
-                display:flex;
-                flex-direction:column;
-                width: 60%;
-                cursor:pointer;
-            }
-
-            label span{
+            span {
+                display: block;
                 background: $dark-green;
                 border-radius:10px;
                 height: 3px;
@@ -33,7 +70,7 @@ header {
 
             span:nth-of-type(1){
               width:50%;
-              margin-left: 25%;
+              margin-left: 8%;
             }
 
             span:nth-of-type(2){
@@ -42,17 +79,17 @@ header {
 
             span:nth-of-type(3){
               width:50%;
-              margin-left: 25%;
+              margin-left: 8%;
 
             }
 
-            input[type="checkbox"]{
-              display:none;
+            .active {
+                background: $bright-yellow;
             }
 
-            input[type="checkbox"]:checked ~ span:nth-of-type(2){
-              width: 50%;
-              background: black;
+            span:nth-of-type(2).active {
+                width: 50%;
+                margin-left: -10%;
             }
         }
     // Hamburger Icon Styling Ends

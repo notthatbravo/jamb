@@ -6,7 +6,7 @@
 
         <!-- Twitter Card -->
         <meta name = "twitter:card" content="summary">
-        <meta name = "twitter:url" content="">
+        <meta name = "twitter:url" content="https://jamb-rebuilt.netlify.app">
         <meta name = "twitter:title" content="Joint Admissions And Matriculation Board">
         <meta name = "twitter:description" content="A Remodeled site for JAMB. You're Welcome.">
         <meta name = "twitter:image" content="">
@@ -25,16 +25,28 @@
     </head>
     <body>
         <header>
+            <!-- SIDEBAR -->
+            <nav>
+                <div id="main-links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Quick Links</a>
+                    <a href="#">News & Events</a>
+                    <a href="#">Candidates & Institutions</a>
+                    <a href="#">Archives</a>
+                    <a href="#">Intranet</a>
+                    <a href="#">Support</a>
+                </div>
+            </nav>
+
+
             <img src="../assets/img/logo.png" alt="Logo">
 
             <!-- Hamburger Menu Icon -->
             <span id = "hamburger-menu-container">
-                <label for="check">
-                    <input type="checkbox" id="check"/>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
+                    <span id="line-1"></span>
+                    <span id="line-2"></span>
+                    <span id="line-3"></span>
             </span>
         </header>
 
@@ -43,14 +55,39 @@
 
             <p>The Joint Admissions and Matriculation Board is a federal body empowered to conduct Matriculation Examination for entry into all Universities, Polytechnics and Colleges of Education (by whatever name called) in Nigeria.</p>
 
-            <a href="#"><button>Sign up for UTME / DE</button></a>
+            <a href="#"><button>View 2021 UTME Results</button></a>
 
-            <a href="#"><button>Login to CAPS</button></a>
+            <a href="#"><button>Upload SSCE Results</button></a>
         </section>
 
 
-        <section class="mission-vision-statement1">
-            <h2>Our Mission</h2>
+        <section class="mission-vision flex">
+            <div class="column" id="left-column">
+                <h2>Our Mission</h2>
+                <p>To pursue with integrity, vigour, commitment, dedication, transparency and selflessness the realization of the objective of a uniform standard in the conduct of matriculation examination and the placement of suitably qualified candidates into the nation’s tertiary institutions.</p>
+            </div>
+
+            <div class="column" id="right-column">
+                <h2>Our Vision</h2>
+                <p>To be a highly-rated first-class and impartial matriculation and admissions board.</p>
+                <p>To reliably measure candidates’ abilities and determine their suitability for higher education.</p>
+            </div>
+
+            <!-- <h2>Core values</h2>
+            Selfless
+            Service
+            Integrity
+            Transparency
+            Dedication
+            Commitment
+            Equity
+            Inclusiveness
+            Zero tolerance for malpractice
+            Personnel development -->
+
+
         </section>
+
+        <script src="../assets/scripts/header.js"></script>
     </body>
 </html>
