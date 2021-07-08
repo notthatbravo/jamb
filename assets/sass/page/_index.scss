@@ -1,0 +1,45 @@
+section.hero {
+    color: white;
+    background-color: #006633;
+    background-image: url(../../assets/img/hero.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+
+    h1 {
+        margin-right: 40%;
+        font-size: 3.8em;
+        font-weight: 600;
+    }
+
+    p {
+        margin: 2% 40% 2% 0;
+        font-size: 1.2em;
+    }
+
+    a {
+        display: inline-block;
+        width: 20%;
+
+
+        button {
+            width: 100%;
+            height: 3.5em;
+            border: none;
+            background: white;
+            border-radius: 0px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+        button:hover {
+            color: white;
+            background: $dark-green;
+        }
+    }
+
+    a:last-of-type {
+        margin-left: 2.5%;
+    }
+}

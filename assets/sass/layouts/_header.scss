@@ -1,0 +1,59 @@
+header {
+    padding: 1% 5%;
+    color: $dark-green;
+
+    img {
+        width: 60%;
+    }
+
+    // Hamburger Icon Styling Begins
+    // This is copied code
+    // Inshallah and Vibes
+    // Edit: I did some major restructuring too!
+        span#hamburger-menu-container {
+            float: right;
+            width: 8%;
+            margin-top: 0.5%;
+
+            label{
+                float: right;
+                display:flex;
+                flex-direction:column;
+                width: 60%;
+                cursor:pointer;
+            }
+
+            label span{
+                background: $dark-green;
+                border-radius:10px;
+                height: 3px;
+                margin: 7px 0;
+                transition: .3s ease-in-out;
+            }
+
+            span:nth-of-type(1){
+              width:50%;
+              margin-left: 25%;
+            }
+
+            span:nth-of-type(2){
+              width:100%;
+            }
+
+            span:nth-of-type(3){
+              width:50%;
+              margin-left: 25%;
+
+            }
+
+            input[type="checkbox"]{
+              display:none;
+            }
+
+            input[type="checkbox"]:checked ~ span:nth-of-type(2){
+              width: 50%;
+              background: black;
+            }
+        }
+    // Hamburger Icon Styling Ends
+}

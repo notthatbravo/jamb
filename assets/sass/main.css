@@ -1,0 +1,121 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  object-fit: cover;
+}
+
+.flex {
+  display: flex;
+  flex-flow: wrap;
+}
+
+section {
+  padding: 5%;
+}
+
+header {
+  padding: 1% 5%;
+  color: #006633;
+}
+header img {
+  width: 60%;
+}
+header span#hamburger-menu-container {
+  float: right;
+  width: 8%;
+  margin-top: 0.5%;
+}
+header span#hamburger-menu-container label {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  cursor: pointer;
+}
+header span#hamburger-menu-container label span {
+  background: #006633;
+  border-radius: 10px;
+  height: 3px;
+  margin: 7px 0;
+  transition: 0.3s ease-in-out;
+}
+header span#hamburger-menu-container span:nth-of-type(1) {
+  width: 50%;
+  margin-left: 25%;
+}
+header span#hamburger-menu-container span:nth-of-type(2) {
+  width: 100%;
+}
+header span#hamburger-menu-container span:nth-of-type(3) {
+  width: 50%;
+  margin-left: 25%;
+}
+header span#hamburger-menu-container input[type=checkbox] {
+  display: none;
+}
+header span#hamburger-menu-container input[type=checkbox]:checked ~ span:nth-of-type(2) {
+  width: 50%;
+  background: black;
+}
+
+section.hero {
+  color: white;
+  background-color: #006633;
+  background-image: url(../../assets/img/hero.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+section.hero h1 {
+  margin-right: 40%;
+  font-size: 3.8em;
+  font-weight: 600;
+}
+section.hero p {
+  margin: 2% 40% 2% 0;
+  font-size: 1.2em;
+}
+section.hero a {
+  display: inline-block;
+  width: 20%;
+}
+section.hero a button {
+  width: 100%;
+  height: 3.5em;
+  border: none;
+  background: white;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+section.hero a button:hover {
+  color: white;
+  background: #006633;
+}
+section.hero a:last-of-type {
+  margin-left: 2.5%;
+}
+
+/*# sourceMappingURL=main.css.map */
