@@ -2,6 +2,10 @@ html {
 	scroll-behavior: smooth;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -28,4 +32,9 @@ img {
 .flex {
 	display: flex;
 	flex-flow: wrap;
+}
+
+::selection {
+	background: $bright-yellow;
+	color: $dark-green;
 }

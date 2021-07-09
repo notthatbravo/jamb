@@ -1,3 +1,10 @@
 section {
     padding: 5%;
+
+    h2 {
+        font-size: 1.8em;
+        font-weight: 400;
+        color: $dark-green;
+        border-bottom: 5px solid $wine;
+    }
 }

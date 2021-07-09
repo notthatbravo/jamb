@@ -22,6 +22,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+        <!-- Animate on Scroll Library -->
+        <!-- https://github.com/michalsnik/aos -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <header>
@@ -40,7 +47,7 @@
             </nav>
 
 
-            <img src="../assets/img/logo.png" alt="Logo">
+            <a href=""><img src="../assets/img/logo.png" alt="Logo"></a>
 
             <!-- Hamburger Menu Icon -->
             <span id = "hamburger-menu-container">
@@ -72,22 +79,82 @@
                 <p>To be a highly-rated first-class and impartial matriculation and admissions board.</p>
                 <p>To reliably measure candidates’ abilities and determine their suitability for higher education.</p>
             </div>
-
-            <!-- <h2>Core values</h2>
-            Selfless
-            Service
-            Integrity
-            Transparency
-            Dedication
-            Commitment
-            Equity
-            Inclusiveness
-            Zero tolerance for malpractice
-            Personnel development -->
-
-
         </section>
 
+        <section class="core-values">
+            <h2>Our Core Values</h2>
+
+            <div class="container flex">
+                <div class="card" data-aos = "fade-right" data-aos-easing = "ease-in-out">Selfless</div>
+                <div class="card" data-aos = "fade-right" data-aos-easing = "ease-in-out">Service</div>
+                <div class="card" data-aos = "fade-left" data-aos-easing = "ease-in-out">Integrity</div>
+                <div class="card" data-aos = "fade-left" data-aos-easing = "ease-in-out">Transparency</div>
+                <div class="card" data-aos = "fade-right" data-aos-easing = "ease-in-out">Dedication</div>
+                <div class="card" data-aos = "fade-right" data-aos-easing = "ease-in-out">Commitment</div>
+                <div class="card" data-aos = "fade-left" data-aos-easing = "ease-in-out">Equity</div>
+                <div class="card" data-aos = "fade-left" data-aos-easing = "ease-in-out">Inclusiveness</div>
+                <div class="card" data-aos = "zoom-in-right" data-aos-easing = "ease-in-out">Zero tolerance for Malpractice</div>
+                <div class="card" data-aos = "zoom-in-left" data-aos-easing = "ease-in-out">Personnel Development</div>
+            </div>
+        </section>
+
+
+
+
+        <section class="news">
+            <h2>News & Events</h2>
+
+            <div class="flex">
+                <div class="card">
+                    <h3>Important Notice to Candidates for Late UTME/Direct Entry Registration</h3>
+                    <p>Each candidate that completed and submitted the late Registration form to JAMB should check the range within which the serial number on his/her form falls to know the centre for registration. The registration is to take place on Tuesday</p>
+
+                    <h4>
+                        <i class="far fa-clock"></i>
+                        <span>15th June, 2021</span>
+                    </h4>
+                </div>
+
+                <div class="card">
+                    <h3>Communiqué of the Joint Admissions and Matriculation Board meeting with Stakeholders on the ongoing 2021 UTME/Direct Entry Registration Exercise</h3>
+                    <p>Following reports of widespread delay in the on-going registration of candidates for the 2021 Unified Tertiary Matriculation Examination (UTME)/Direct Entry (DE), a two-day stakeholders’ meeting was convened under the auspices of the Joint Admissions and Matriculation Board (JAMB). The meeting held at Sheraton Hotels, Abuja, on 14th and 15th May, 2021.</p>
+
+                    <h4>
+                        <i class="far fa-clock"></i>
+                        <span>20th May, 2021</span>
+                    </h4>
+                </div>
+
+                <div class="card">
+                    <h3>UTME: We are not recruiting Invigilators</h3>
+                    <p>In a signed statement titled: DISCLAIMER: "WE ARE NOT RECRUITING INVIGILATORS" by Dr Fabian Benjamin, Head, Public Relations JAMB, and made available to Channel Network Afrique,the board warned members of the public to beware of fraudsters that are claiming to be recruiting invigilators for the 2021 UTME/DE.</p>
+
+                    <h4>
+                        <i class="far fa-clock"></i>
+                        <span>7th May, 2021</span>
+                    </h4>
+                </div>
+            </div>
+
+            <p id="view-all"><a href="#">View All</a><p>
+        </section>
+
+        <section class="explore">
+            <h2>Explore</h2>
+        </section>
+
+
+        <footer>
+
+        </footer>
+
         <script src="../assets/scripts/header.js"></script>
+
+        <!-- Initializing Animate On Scroll -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+
     </body>
 </html>
