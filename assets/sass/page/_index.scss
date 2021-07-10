@@ -38,6 +38,7 @@ section.hero {
         button:hover {
             color: white;
             background: $dark-green;
+            border-bottom: 1px solid white;
         }
     }
 
@@ -238,5 +239,79 @@ section.explore {
     h2 {
         margin-right: 90%;
         overflow: hidden;
+    }
+}
+
+
+
+
+// Responsiveness
+@media (max-width: 800px) {
+    section.hero {
+        h1 {
+            margin-right: 20%;
+            font-size: 2em;
+        }
+
+        p {
+            margin-right: 0;
+            margin-bottom: 10%;
+        }
+
+        a {
+            width: 100%;
+        }
+
+        a:last-of-type {
+            margin: 5% 0 5% 0;
+        }
+    }
+
+    section.mission-vision {
+        div.column {
+            h2 {
+                margin: 0;
+                text-align: center;
+            }
+        }
+
+        div#right-column {
+            margin-top: 10%;
+            border-left: 1px solid black;
+        }
+    }
+
+    section.core-values {
+        h2 {
+            width: 100%;
+            margin: 0;
+        }
+
+        div.container {
+            margin-top: 10%;
+
+            div.card {
+                margin: 5% 0;
+            }
+        }
+    }
+
+    section.news {
+        h2 {
+            margin: 0;
+            text-align: center;
+        }
+
+        div.flex {
+            div.card {
+                margin: 5% 0;
+            }
+        }
+    }
+
+    section.explore {
+        h2 {
+            margin: 0;
+        }
     }
 }

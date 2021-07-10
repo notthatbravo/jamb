@@ -39,6 +39,11 @@ img {
   color: #006633;
 }
 
+@media (max-width: 800px) {
+  .flex {
+    display: block;
+  }
+}
 section {
   padding: 5%;
 }
@@ -169,6 +174,7 @@ section.hero a button {
 section.hero a button:hover {
   color: white;
   background: #006633;
+  border-bottom: 1px solid white;
 }
 section.hero a:last-of-type {
   margin-left: 2.5%;
@@ -331,6 +337,55 @@ section.news a:hover {
 section.explore h2 {
   margin-right: 90%;
   overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  section.hero h1 {
+    margin-right: 20%;
+    font-size: 2em;
+  }
+  section.hero p {
+    margin-right: 0;
+    margin-bottom: 10%;
+  }
+  section.hero a {
+    width: 100%;
+  }
+  section.hero a:last-of-type {
+    margin: 5% 0 5% 0;
+  }
+
+  section.mission-vision div.column h2 {
+    margin: 0;
+    text-align: center;
+  }
+  section.mission-vision div#right-column {
+    margin-top: 10%;
+    border-left: 1px solid black;
+  }
+
+  section.core-values h2 {
+    width: 100%;
+    margin: 0;
+  }
+  section.core-values div.container {
+    margin-top: 10%;
+  }
+  section.core-values div.container div.card {
+    margin: 5% 0;
+  }
+
+  section.news h2 {
+    margin: 0;
+    text-align: center;
+  }
+  section.news div.flex div.card {
+    margin: 5% 0;
+  }
+
+  section.explore h2 {
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

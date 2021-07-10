@@ -38,3 +38,11 @@ img {
 	background: $bright-yellow;
 	color: $dark-green;
 }
+
+
+// Responsiveness
+@media (max-width: 800px) {
+	.flex {
+		display: block;
+	}
+}

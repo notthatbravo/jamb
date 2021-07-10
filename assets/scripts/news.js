@@ -7,7 +7,6 @@ closeCardBtn.addEventListener('click', closeCard);
 
 function openCard() {
     card.classList.toggle('opened-news-card');
-    document.body.style.overflow = 'hidden';
 }
 
 function closeCard() {
