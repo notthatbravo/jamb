@@ -1,6 +1,7 @@
 header {
     position: fixed;
     top: 0;
+    z-index: 1;
     width: 100%;
     color: $dark-green;
     background: white;
@@ -9,6 +10,7 @@ header {
     // SIDEBAR STYLING BEGINS
     nav {
         position: fixed;
+        z-index: 10;
         right: 0;
         width: 0;
         height: 100vh;
@@ -52,6 +54,7 @@ header {
     // Edit: I did some major restructuring too!
         span#hamburger-menu-container {
             position: fixed;
+            z-index: 10;
             display: grid;
             place-items: center;
             top: 2%;

@@ -57,6 +57,7 @@ footer {
 header {
   position: fixed;
   top: 0;
+  z-index: 1;
   width: 100%;
   color: #006633;
   background: white;
@@ -64,6 +65,7 @@ header {
 }
 header nav {
   position: fixed;
+  z-index: 10;
   right: 0;
   width: 0;
   height: 100vh;
@@ -95,6 +97,7 @@ header img {
 }
 header span#hamburger-menu-container {
   position: fixed;
+  z-index: 10;
   display: grid;
   place-items: center;
   top: 2%;
@@ -231,8 +234,10 @@ section.news div.flex div.card {
   border-radius: 5px;
   background: white;
 }
+section.news div.flex div.card span#close-btn {
+  display: none;
+}
 section.news div.flex div.card h3 {
-  margin-bottom: 5%;
   color: #006633;
   font-size: 1.3em;
   font-weight: 400;
@@ -244,13 +249,19 @@ section.news div.flex div.card h3 {
 }
 section.news div.flex div.card p {
   display: -webkit-box;
+  margin: 5% 0;
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-section.news div.flex div.card p:after {
-  content: "Read more";
+section.news div.flex div.card span#read-more-btn {
+  color: #990033;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+section.news div.flex div.card span#read-more-btn:hover {
+  text-decoration: underline;
 }
 section.news div.flex div.card h4 {
   margin-top: 5%;
@@ -260,6 +271,49 @@ section.news div.flex div.card h4 {
 section.news div.flex div.card h4 span {
   font-size: inherit;
   font-weight: 500;
+}
+section.news div.flex div.opened-news-card {
+  position: absolute;
+  width: 95%;
+  height: 80%;
+  margin-left: -1.25%;
+  z-index: 1000;
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+section.news div.flex div.opened-news-card span#close-btn {
+  display: block;
+  font-size: 2em;
+  float: right;
+  color: #006633;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+section.news div.flex div.opened-news-card span#close-btn:hover {
+  font-size: 3em;
+}
+section.news div.flex div.opened-news-card h3 {
+  margin-top: 10%;
+  font-size: 2em;
+  display: block;
+  -webkit-line-clamp: unset;
+  -webkit-box-orient: unset;
+  overflow: unset;
+  text-overflow: unset;
+}
+section.news div.flex div.opened-news-card p {
+  font-size: 1.4em;
+  display: block;
+  -webkit-line-clamp: unset;
+  -webkit-box-orient: unset;
+  overflow: unset;
+  text-overflow: unset;
+}
+section.news div.flex div.opened-news-card span#read-more-btn {
+  display: none;
+}
+section.news div.flex div.opened-news-card h4 {
+  font-size: 1.3em;
 }
 section.news p#view-all {
   margin-top: 5%;

@@ -118,8 +118,11 @@ section.news {
             border-radius: 5px;
             background: white;
 
+            span#close-btn {
+                display: none;
+            }
+
             h3 {
-                margin-bottom: 5%;
                 color: $dark-green;
                 font-size: 1.3em;
                 font-weight: 400;
@@ -132,14 +135,21 @@ section.news {
 
             p {
                 display: -webkit-box;
+                margin: 5% 0;
                 -webkit-line-clamp: 6;
                 -webkit-box-orient: vertical;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
 
-            p:after {
-                content: 'Read more';
+            span#read-more-btn {
+                color: $wine;
+                font-size: 0.8em;
+                cursor: pointer;
+            }
+
+            span#read-more-btn:hover {
+                text-decoration: underline;
             }
 
             h4 {
@@ -153,6 +163,57 @@ section.news {
                 }
             }
         }
+
+        div.opened-news-card {
+            position: absolute;
+            width: 95%;
+            height: 80%;
+            margin-left: -1.25%;
+            z-index: 1000;
+            border-radius: 5px;
+            overflow-y: scroll;
+
+            span#close-btn {
+                display: block;
+                font-size: 2em;
+                float: right;
+                color: $dark-green;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+            }
+
+            span#close-btn:hover {
+                font-size: 3em;
+            }
+
+            h3 {
+                margin-top: 10%;
+                font-size: 2em;
+                display: block;
+                -webkit-line-clamp: unset;
+                -webkit-box-orient: unset;
+                overflow: unset;
+                text-overflow: unset;
+            }
+
+            p {
+                font-size: 1.4em;
+                display: block;
+                -webkit-line-clamp: unset;
+                -webkit-box-orient: unset;
+                overflow: unset;
+                text-overflow: unset;
+            }
+
+            span#read-more-btn {
+                display: none;
+            }
+
+            h4 {
+                font-size: 1.3em;
+            }
+        }
+
     }
 
     // View All
