@@ -255,6 +255,8 @@ section.explore {
                     width: 100%;
                     height: 100%;
                     padding: 5%;
+                    backface-visibility: hidden;
+                    -webkit-backface-visibility: hidden;
                 }
 
                 div.flip-card-front {
@@ -358,7 +360,7 @@ section.explore {
     section.news {
         h2 {
             margin: 0;
-            text-align: center;
+            text-align: left;
         }
 
         div.flex {

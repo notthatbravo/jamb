@@ -379,6 +379,8 @@ section.explore div.flex div.card-container div.inner-container div.flip-card-ba
   width: 100%;
   height: 100%;
   padding: 5%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 section.explore div.flex div.card-container div.inner-container div.flip-card-front {
   background: #990033;
@@ -452,7 +454,7 @@ section.explore div.flex div.card-container:hover div.inner-container {
 
   section.news h2 {
     margin: 0;
-    text-align: center;
+    text-align: left;
   }
   section.news div.flex div.card {
     margin: 5% 0;
