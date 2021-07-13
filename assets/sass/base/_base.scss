@@ -10,9 +10,11 @@ body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-size: 18px;
-	font-family: "Poppins", sans-serif;
-	font-weight: 300;
+	font: {
+		size: 18px;
+		family: "Poppins", sans-serif;
+		weight: 300;
+	}
 	line-height: 1.5em;
 }
 
@@ -39,10 +41,29 @@ img {
 	color: $dark-green;
 }
 
+.show-on-mobile {
+	display: none;
+}
 
 // Responsiveness
 @media (max-width: 800px) {
 	.flex {
 		display: block;
+	}
+
+	.show-on-mobile {
+		display: block;
+	}
+
+	.hide-on-mobile {
+		display: none;
+	}
+}
+
+
+// Very Large Screens
+@media (min-width: 1441px) {
+	* {
+		font-size: 40px;
 	}
 }

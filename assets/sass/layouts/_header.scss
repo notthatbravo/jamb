@@ -43,8 +43,9 @@ header {
 
     // SIDEBAR STYLING ENDS
 
+    // Logo
     img {
-        width: 60%;
+        width: 50em;
         padding: 1% 5%;
     }
 
@@ -57,7 +58,7 @@ header {
             z-index: 10;
             display: grid;
             place-items: center;
-            top: 2%;
+            top: 4%;
             right: 2.5%;
             width: 5%;
             height: 3em;
@@ -97,4 +98,18 @@ header {
             }
         }
     // Hamburger Icon Styling Ends
+}
+
+
+@media (max-width: 800px) {
+    header {
+        img {
+            width: 6em;
+            padding: 5%;
+        }
+
+        span#hamburger-menu-container {
+            width: 10%;
+        }
+    }
 }

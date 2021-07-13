@@ -13,7 +13,7 @@
         <meta name = "twitter:creator" content="@zeroth_bravo">
 
         <title>Home | Joint Admissions And Matriculation Board</title>
-        <link rel="shortcut icon" href="../assets/img/logo.png">
+        <link rel="shortcut icon" href="../assets/img/logo-mobile.png">
 
         <!-- Stylesheet -->
         <link rel="stylesheet" href="../assets/sass/main.css">
@@ -47,7 +47,11 @@
             </nav>
 
 
-            <a href=""><img src="../assets/img/logo.png" alt="Logo"></a>
+            <!-- Show on Desktop -->
+            <a href=""><img src="../assets/img/logo-desktop.png" alt="Logo" class="hide-on-mobile"></a>
+
+            <!-- Show on Mobile -->
+            <a href=""><img src="../assets/img/logo-mobile.png" alt="Logo" class="show-on-mobile"></a>
 
             <!-- Hamburger Menu Icon -->
             <span id = "hamburger-menu-container">
@@ -64,7 +68,7 @@
 
             <a href="#"><button>View 2021 UTME Results</button></a>
 
-            <a href="#"><button>Upload SSCE Results</button></a>
+            <a href="#"><button>Login to E-Facility</button></a>
         </section>
 
 
@@ -152,8 +156,57 @@
             <h2>Explore</h2>
 
             <div class="container flex">
-                <div class="card">
-                    <h3>E-facility</h3>
+                <div class="card-container">
+
+                    <div class="inner-container">
+                        <div class="flip-card-front">
+                            <h3>E-facility</h3>
+                        </div>
+
+                        <div class="flip-card-back">
+                            <p>Access candidate login page and payment for online services</p>
+                            <a href="#">Login</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="inner-container">
+                        <div class="flip-card-front">
+                            <h3>IBASS</h3>
+                        </div>
+
+                        <div class="flip-card-back">
+                            <p>Access JAMB Interactive Brochure and Syllabus System</p>
+                            <a href="#">View Syllabus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="inner-container">
+                        <div class="flip-card-front">
+                            <h3>Support</h3>
+                        </div>
+
+                        <div class="flip-card-back">
+                            <p>Access Ticketing System for complains, enquires and helpline</p>
+                            <a href="#">Raise TIcket</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="inner-container">
+                        <div class="flip-card-front">
+                            <h3>CAPS</h3>
+                        </div>
+
+                        <div class="flip-card-back">
+                            <p>Access Central Admissions Processing System</p>
+                            <a href="#">Login</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

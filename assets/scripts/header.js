@@ -7,7 +7,6 @@ const line3 = document.querySelector('#line-3');
 hamburgerIcon.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
-    console.log('oppor');
     sidebar.classList.toggle('active');
 
     line1.classList.toggle('active');
