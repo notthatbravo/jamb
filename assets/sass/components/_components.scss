@@ -6,6 +6,7 @@ section {
         font-size: 1.8em;
         font-weight: 400;
         color: $dark-green;
-        // border-bottom: 5px solid $wine;
+        text-decoration: overline;
+        text-decoration-color: $wine;
     }
 }

@@ -69,13 +69,84 @@ section h2 {
   font-size: 1.8em;
   font-weight: 400;
   color: #006633;
+  text-decoration: overline;
+  text-decoration-color: #990033;
 }
 
 footer {
-  padding: 10% 5%;
-  background: #006633;
+  padding: 5%;
+  background: #99cc33;
+}
+footer div.top-container div.column {
+  flex: 20%;
+  padding: 0 1.25%;
+}
+footer div.top-container div.column a {
+  display: block;
+  padding: 5% 0;
+  font-weight: 500;
+  transition: 0.4s ease-in-out;
+}
+footer div.top-container div.column a:hover {
+  color: #990033;
+}
+footer div.top-container div.column:nth-of-type(1) {
+  margin-left: 0;
+  padding-top: 5%;
+}
+footer div.top-container div.column:last-of-type h2 {
+  font-weight: 700;
+  padding: 5% 0;
+}
+footer div.top-container div.column:last-of-type form input {
+  width: 100%;
+  padding: 2.5%;
+  border: 1px solid black;
+  border-radius: 0;
+}
+footer div.bottom-container {
+  margin-top: 5%;
+  padding-top: 5%;
+  border-top: 5px solid #990033;
+}
+footer div.bottom-container div.column {
+  flex: 33.33%;
+}
+footer div.bottom-container div.column a {
+  color: #990033;
+  font-weight: 500;
+}
+footer div.bottom-container div.column:first-of-type a {
+  display: inline-grid;
+  place-items: center;
+  width: 3em;
+  height: 3em;
+  margin-top: -5%;
+  background: #990033;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+}
+footer div.bottom-container div.column:first-of-type a i {
+  font-size: 1.3em;
+  transition: 0.4s ease-in-out;
+}
+footer div.bottom-container div.column:first-of-type a:hover i {
+  color: #99cc33;
 }
 
+@media (max-width: 800px) {
+  footer img {
+    width: 6em;
+  }
+  footer div.bottom-container div.column {
+    margin: 5% 0;
+    text-align: center;
+  }
+  footer div.bottom-container div.column a {
+    margin-top: 0 !important;
+  }
+}
 header {
   position: fixed;
   top: 0;
