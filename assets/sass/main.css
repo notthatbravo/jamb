@@ -75,7 +75,7 @@ section h2 {
 
 footer {
   padding: 5%;
-  background: #99cc33;
+  background: #669933;
 }
 footer div.top-container div.column {
   flex: 20%;
@@ -92,7 +92,10 @@ footer div.top-container div.column a:hover {
 }
 footer div.top-container div.column:nth-of-type(1) {
   margin-left: 0;
-  padding-top: 5%;
+}
+footer div.top-container div.column:nth-of-type(1) h3 {
+  font-weight: 600;
+  margin-top: 5%;
 }
 footer div.top-container div.column:last-of-type h2 {
   font-weight: 700;
@@ -132,12 +135,18 @@ footer div.bottom-container div.column:first-of-type a i {
   transition: 0.4s ease-in-out;
 }
 footer div.bottom-container div.column:first-of-type a:hover i {
-  color: #99cc33;
+  color: #669933;
+}
+footer div.bottom-container div:nth-of-type(2) {
+  text-align: center;
+}
+footer div.bottom-container div:last-of-type {
+  text-align: right;
 }
 
 @media (max-width: 800px) {
-  footer img {
-    width: 6em;
+  footer div.top-container div:first-of-type {
+    margin-bottom: 10%;
   }
   footer div.bottom-container div.column {
     margin: 5% 0;
