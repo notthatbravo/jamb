@@ -63,6 +63,7 @@ img {
 }
 section {
   padding: 5%;
+  padding-top: 10em;
   overflow: hidden;
 }
 section h2 {
@@ -545,6 +546,96 @@ section.explore div.flex div.card-container:hover div.inner-container {
 
   section.explore div.flex div.card-container {
     margin-top: 5%;
+  }
+}
+section.efacility-login-container {
+  position: relative;
+  height: 100vh;
+  padding: 5em 0 0;
+}
+section.efacility-login-container div.left-column,
+section.efacility-login-container div.right-column {
+  flex: 50%;
+  transition: 1s ease-in-out;
+}
+section.efacility-login-container div.left-column {
+  display: grid;
+  place-items: center;
+  padding: 5%;
+  background: #006633;
+}
+section.efacility-login-container div.left-column h1 {
+  font-size: 4em;
+  font-weight: 600;
+  color: white;
+  transition: color 2s ease-in-out;
+}
+section.efacility-login-container div.right-column {
+  padding: 10%;
+  border: 3px solid #006633;
+}
+section.efacility-login-container div.right-column form label {
+  font-size: 1.3em;
+  cursor: pointer;
+}
+section.efacility-login-container div.right-column form input {
+  width: 100%;
+  margin: 2.5% 0 10%;
+  height: 3em;
+  padding: 2.5%;
+  border: 1px solid #006633;
+  border-radius: 0px;
+  color: #990033;
+}
+section.efacility-login-container div.right-column form button {
+  width: 10em;
+  height: 3em;
+  border: 0px;
+  border-radius: 0px;
+  color: white;
+  background: #006633;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+section.efacility-login-container div.right-column form button:hover {
+  background: none;
+  border: 1px solid #006633;
+  color: #990033;
+}
+section.efacility-login-container div.right-column form a {
+  display: block;
+  margin: 5% 0;
+  font-size: 0.9em;
+  color: #990033;
+}
+section.efacility-login-container div.right-column form a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  section.efacility-login-container {
+    height: 100%;
+  }
+  section.efacility-login-container div.left-column {
+    background: none;
+  }
+  section.efacility-login-container div.left-column h1 {
+    color: #006633;
+  }
+  section.efacility-login-container div.right-column {
+    color: white;
+    background-color: #006633;
+  }
+  section.efacility-login-container div.right-column form input {
+    border: 1px solid black;
+  }
+  section.efacility-login-container div.right-column form button {
+    background: white;
+    color: #006633;
+  }
+  section.efacility-login-container div.right-column form button:hover {
+    background: #990033;
+    color: white;
   }
 }
 

@@ -1,0 +1,109 @@
+section.efacility-login-container {
+    position: relative;
+    height: 100vh;
+    padding: 5em 0 0;
+
+    div.left-column,
+    div.right-column {
+        flex: 50%;
+        transition: 1s ease-in-out;
+    }
+
+    div.left-column {
+        display: grid;
+        place-items: center;
+        padding: 5%;
+        background: $dark-green;
+
+        h1 {
+            font-size: 4em;
+            font-weight: 600;
+            color: white;
+            transition: color 2s ease-in-out;
+        }
+    }
+
+    div.right-column {
+        padding: 10%;
+        border: 3px solid $dark-green;
+
+        form {
+            label {
+                font-size: 1.3em;
+                cursor: pointer;
+            }
+
+            input {
+                width: 100%;
+                margin: 2.5% 0 10%;
+                height: 3em;
+                padding: 2.5%;
+                border: 1px solid $dark-green;
+                border-radius: 0px;
+                color: $wine;
+            }
+
+            button {
+                width: 10em;
+                height: 3em;
+                border: 0px;
+                border-radius: 0px;
+                color: white;
+                background: $dark-green;
+                cursor: pointer;
+                transition: 0.4s ease-in-out;
+            }
+
+            button:hover {
+                background: none;
+                border: 1px solid $dark-green;
+                color: $wine;
+            }
+
+            a {
+                display: block;
+                margin: 5% 0;
+                font-size: 0.9em;
+                color: $wine;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    section.efacility-login-container {
+        height: 100%;
+        div.left-column {
+            background: none;
+
+            h1 {
+                color: $dark-green;
+            }
+        }
+
+        div.right-column {
+            color: white;
+            background-color: $dark-green;
+
+            form {
+                input {
+                    border: 1px solid black;
+                }
+
+                button {
+                    background: white;
+                    color: $dark-green;
+                }
+
+                button:hover {
+                    background: $wine;
+                    color: white;
+                }
+            }
+        }
+    }
+}
