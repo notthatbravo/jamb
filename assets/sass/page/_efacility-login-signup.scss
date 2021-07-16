@@ -1,12 +1,15 @@
-section.efacility-login-container {
-    position: relative;
+section.efacility-login-container,
+section.efacility-signup-container {
+    width: 100%;
     height: 100vh;
     padding: 5em 0 0;
+    transition: 2s;
 
     div.left-column,
     div.right-column {
         flex: 50%;
-        transition: 1s ease-in-out;
+        height: 100%;
+        transition: color 1s ease-in-out, background 1s ease-in-out;
     }
 
     div.left-column {
@@ -20,6 +23,7 @@ section.efacility-login-container {
             font-weight: 600;
             color: white;
             transition: color 2s ease-in-out;
+            letter-spacing: 0.13em;
         }
     }
 
@@ -28,6 +32,14 @@ section.efacility-login-container {
         border: 3px solid $dark-green;
 
         form {
+
+            p#warning {
+                margin: -5% -0 5%;
+                color: red;
+                font-weight: 500;
+                text-transform: full-width;
+            }
+
             label {
                 font-size: 1.3em;
                 cursor: pointer;
@@ -70,15 +82,38 @@ section.efacility-login-container {
             a:hover {
                 text-decoration: underline;
             }
+
+            a#temp-dash-link {
+                display: inline-block;
+                padding-left: 2.5%;
+            }
         }
     }
 }
 
+// Signup page
+section.efacility-signup-container {
+    div.right-column {
+        overflow-y: scroll;
+
+        p {
+            margin-top: 10%;
+            a {
+                display: inline;
+            }
+        }
+    }
+}
+
+// Responsiveness
 @media (max-width: 800px) {
-    section.efacility-login-container {
+    section.efacility-login-container,
+    section.efacility-signup-container {
         height: 100%;
+
         div.left-column {
             background: none;
+            height: 80vh;
 
             h1 {
                 color: $dark-green;
@@ -88,10 +123,19 @@ section.efacility-login-container {
         div.right-column {
             color: white;
             background-color: $dark-green;
+            overflow: hidden;
 
             form {
+                p#warning {
+                    color: $bright-yellow;
+                }
+
                 input {
                     border: 1px solid black;
+                }
+
+                ::placeholder {
+                    font-size: 0.85em;
                 }
 
                 button {
@@ -103,6 +147,21 @@ section.efacility-login-container {
                     background: $wine;
                     color: white;
                 }
+
+                a {
+                    color: white;
+                    opacity: 0.8;
+                }
+
+                a:hover {
+                    opacity: 1;
+                }
+
+                a#temp-dash-link {
+                    display: block;
+                    padding: 0;
+                }
+
             }
         }
     }

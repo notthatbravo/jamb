@@ -3,10 +3,10 @@
     <head>
         <meta charset = "utf-8">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-        <meta name="description" content="Login to JAMB E-facility. Check Admission Status, Change preferred course of study and much more!">
+        <meta name="description" content="Signup on JAMB E-facility. Check Admission Status, Change preferred course of study and much more!">
         <meta name="keywords" content="jamb, jamb website, utme, university, universities, nigeria, direct entry, efacility, caps, efacility login">
 
-        <title>E-Facility Login | Joint Admissions And Matriculation Board</title>
+        <title>E-Facility Signup | Joint Admissions And Matriculation Board</title>
         <link rel="shortcut icon" href="../../assets/img/logo-mobile.png">
 
         <!-- Stylesheet -->
@@ -55,29 +55,31 @@
             </span>
         </header>
 
-        <section class="efacility-login-container flex">
+        <section class="efacility-signup-container flex">
             <div class="left-column">
-                <h1>Login</h1>
+                <h1>Signup</h1>
             </div>
 
             <div class="right-column">
-                <form action="index.html" method="post">
+                <form action="POST">
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" required placeholder="dele.chukwudi.yusuf@gmail.com" autocomplete="email">
+                    <input type="email" id="email" required placeholder="bimbo.chioma.aishat@gmail.com" autocomplete="email">
 
                     <label for="password">Password</label>
-                    <input type="password" id="password" minlength="8" required placeholder="It's usually 8 characters or more" autocomplete="current-password">
+                    <input type="password" id="password" minlength="8" required placeholder="Make it 8 characters or more" autocomplete="new-password">
+
+                    <label for="c-password">Confirm Password</label>
+                    <input type="password" id="c-password" minlength="8" required placeholder="What you typed up there" autocomplete="new-password">
 
                     <p id="warning"></p>
                     <!-- Demo: -->
                     <!-- <p id="warning">E-mail Address / Password is Incorrect</p> -->
 
+
                     <button type="submit" name="button">Submit</button>
                     <a href="#" id="temp-dash-link">Go to Dashboard Page</a>
 
-                    <a href="../signup">Create an Account</a>
-                    <a href="#">Reset Password</a>
-
+                    <p>Already have an account? <a href="../login">Login</a></p>
 
                 </form>
             </div>

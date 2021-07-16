@@ -1,3 +1,12 @@
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: $dark-green;
+	border-radius: 5px;
+}
+
 section {
     padding: 5%;
     padding-top: 10em;
