@@ -613,6 +613,7 @@ section.efacility-signup-container div.right-column form input {
   border: 1px solid #006633;
   border-radius: 0px;
   color: #990033;
+  outline-color: #006633;
 }
 section.efacility-login-container div.right-column form button,
 section.efacility-signup-container div.right-column form button {
