@@ -585,7 +585,6 @@ section.efacility-signup-container div.left-column h1 {
   font-weight: 600;
   color: white;
   transition: color 2s ease-in-out;
-  letter-spacing: 0.13em;
 }
 section.efacility-login-container div.right-column,
 section.efacility-signup-container div.right-column {
@@ -605,7 +604,9 @@ section.efacility-signup-container div.right-column form label {
   cursor: pointer;
 }
 section.efacility-login-container div.right-column form input,
-section.efacility-signup-container div.right-column form input {
+section.efacility-login-container div.right-column form select,
+section.efacility-signup-container div.right-column form input,
+section.efacility-signup-container div.right-column form select {
   width: 100%;
   margin: 2.5% 0 10%;
   height: 3em;
@@ -614,6 +615,10 @@ section.efacility-signup-container div.right-column form input {
   border-radius: 0px;
   color: #990033;
   outline-color: #006633;
+}
+section.efacility-login-container div.right-column form input[type=text],
+section.efacility-signup-container div.right-column form input[type=text] {
+  text-transform: capitalize;
 }
 section.efacility-login-container div.right-column form button,
 section.efacility-signup-container div.right-column form button {
@@ -677,6 +682,7 @@ section.efacility-signup-container div.left-column h1 {
 section.efacility-signup-container div.right-column {
     color: white;
     background-color: #006633;
+    border: none;
     overflow: hidden;
   }
   section.efacility-login-container div.right-column form p#warning,

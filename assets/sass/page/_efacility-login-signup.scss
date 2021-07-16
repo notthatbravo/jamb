@@ -23,7 +23,7 @@ section.efacility-signup-container {
             font-weight: 600;
             color: white;
             transition: color 2s ease-in-out;
-            letter-spacing: 0.13em;
+
         }
     }
 
@@ -45,7 +45,8 @@ section.efacility-signup-container {
                 cursor: pointer;
             }
 
-            input {
+            input,
+            select {
                 width: 100%;
                 margin: 2.5% 0 10%;
                 height: 3em;
@@ -54,6 +55,10 @@ section.efacility-signup-container {
                 border-radius: 0px;
                 color: $wine;
                 outline-color: $dark-green;
+            }
+
+            input[type="text"] {
+                text-transform: capitalize;
             }
 
             button {
@@ -124,6 +129,7 @@ section.efacility-signup-container {
         div.right-column {
             color: white;
             background-color: $dark-green;
+            border: none;
             overflow: hidden;
 
             form {
