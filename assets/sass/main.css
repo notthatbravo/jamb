@@ -247,6 +247,12 @@ header span#hamburger-menu-container span:nth-of-type(2).active {
 }
 
 @media (max-width: 800px) {
+  header nav div#main-links {
+    padding-top: 5em;
+  }
+  header nav div#main-links a {
+    font-size: 1em;
+  }
   header img {
     width: 6em;
     height: auto;
@@ -603,6 +609,11 @@ section.efacility-signup-container div.right-column form label {
   font-size: 1.3em;
   cursor: pointer;
 }
+section.efacility-login-container div.right-column form label.required-field::after,
+section.efacility-signup-container div.right-column form label.required-field::after {
+  content: "*";
+  color: #990033;
+}
 section.efacility-login-container div.right-column form input,
 section.efacility-login-container div.right-column form select,
 section.efacility-signup-container div.right-column form input,
@@ -680,6 +691,7 @@ section.efacility-signup-container div.left-column h1 {
   }
   section.efacility-login-container div.right-column,
 section.efacility-signup-container div.right-column {
+    padding: 10% 5%;
     color: white;
     background-color: #006633;
     border: none;
@@ -687,6 +699,10 @@ section.efacility-signup-container div.right-column {
   }
   section.efacility-login-container div.right-column form p#warning,
 section.efacility-signup-container div.right-column form p#warning {
+    color: #ffcc00;
+  }
+  section.efacility-login-container div.right-column form label.required-field::after,
+section.efacility-signup-container div.right-column form label.required-field::after {
     color: #ffcc00;
   }
   section.efacility-login-container div.right-column form input,

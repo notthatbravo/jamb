@@ -45,6 +45,11 @@ section.efacility-signup-container {
                 cursor: pointer;
             }
 
+            label.required-field::after {
+                content: '*';
+                color: $wine;
+            }
+
             input,
             select {
                 width: 100%;
@@ -112,6 +117,7 @@ section.efacility-signup-container {
 }
 
 // Responsiveness
+
 @media (max-width: 800px) {
     section.efacility-login-container,
     section.efacility-signup-container {
@@ -127,6 +133,7 @@ section.efacility-signup-container {
         }
 
         div.right-column {
+            padding: 10% 5%;
             color: white;
             background-color: $dark-green;
             border: none;
@@ -134,6 +141,10 @@ section.efacility-signup-container {
 
             form {
                 p#warning {
+                    color: $bright-yellow;
+                }
+
+                label.required-field::after {
                     color: $bright-yellow;
                 }
 

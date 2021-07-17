@@ -62,32 +62,33 @@
 
             <div class="right-column">
                 <form action="POST">
-                    <label for="f-name">First Name</label>
-                    <input type="text" name="f-name" id="f-name" required placeholder="Ademide" autocomplete="given-name">
+                    <label for="f-name" class="required-field">First Name</label>
+                    <input type="text" name="f-name" id="f-name" required placeholder="Bimpe" autocomplete="given-name" title="What is your given name?">
 
                     <label for="m-name">Middle Name</label>
-                    <input type="text" name="m-name" id="m-name" placeholder="Chinaza" autocomplete="additional-name">
+                    <input type="text" name="m-name" id="m-name" placeholder="Chioma" autocomplete="additional-name" title="What is your middle name?">
 
-                    <label for="l-name">Last Name</label>
-                    <input type="text" name="l-name" id="l-name" required placeholder="Mohammed" autocomplete="family-name">
+                    <label for="l-name" class="required-field">Last Name</label>
+                    <input type="text" name="l-name" id="l-name" required placeholder="Baba" autocomplete="family-name" title="What is your surname?">
 
-                    <label for="gender">Gender</label>
-                    <select id="gender" name="gender" autocomplete="sex" required>
-                        <option selected="selected">Male</option>
-                        <option value="">Female</option>
+                    <label for="gender" class="required-field">Gender</label>
+                    <select id="gender" name="gender" autocomplete="sex" required title="Select an Option. Male or Female?">
+                        <option selected>- Select -</option>
+                        <option>Male</option>
+                        <option>Female</option>
                     </select>
 
-                    <label for="dob">Date of Birth</label>
-                    <input type="date" name="dob" id="dob" autocomplete="bday" required>
+                    <label for="dob" class="required-field">Date of Birth</label>
+                    <input type="date" name="dob" id="dob" autocomplete="bday" required title="What is your date of birth?">
 
-                    <label for="phone-num">Telephone Number</label>
-                    <input type="num" name="phone-num" id="phone-num" required autocomplete="tel" placeholder="08166335513">
+                    <label for="phone-num" class="required-field">Telephone Number</label>
+                    <input type="num" name="phone-num" id="phone-num" required autocomplete="tel" placeholder="0816 633 5513" title="What is your phone number?">
 
-                    <label for="address">Home Address</label>
-                    <input type="text" name="address" id="address" required placeholder="11, Ojora Road, Ikoyi" autocomplete="street-address">
+                    <label for="address" class="required-field">Home Address</label>
+                    <input type="text" name="address" id="address" required placeholder="11, Ojora Road, Ikoyi" autocomplete="street-address" title="Where do you live?">
 
-                    <label for="state">State</label>
-                    <select name="state" id="state">
+                    <label for="state" class="required-field">State</label>
+                    <select name="state" id="state" title="In what state? You can also specify outside Nigeria">
                         <option value="" selected="selected">- Select -</option>
                         <option value="Abuja FCT">Abuja FCT</option>
                         <option value="Abia">Abia</option>
@@ -127,16 +128,15 @@
                         <option value="Yobe">Yobe</option>
                         <option value="Zamfara">Zamfara</option>
                         <option value="Outside Nigeria">Outside Nigeria</option>
-            </select>
+                    </select>
 
+                    <label for="email" class="required-field">Email Address</label>
+                    <input type="email" id="email" required placeholder="bimpe.chioma.baba@gmail.com" autocomplete="email" title="Enter your email address">
 
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" required placeholder="bimbo.chioma.aishat@gmail.com" autocomplete="email" title="Enter your email address. It's a required field">
+                    <label for="password" class="required-field">Password</label>
+                    <input type="password" id="password" minlength="8" required placeholder="Make it 8 characters or more" autocomplete="new-password" title="Create a secure password.">
 
-                    <label for="password">Password</label>
-                    <input type="password" id="password" minlength="8" required placeholder="Make it 8 characters or more" autocomplete="new-password" title="Create a secure password. It's a required field">
-
-                    <label for="c-password">Confirm Password</label>
+                    <label for="c-password" class="required-field">Confirm Password</label>
                     <input type="password" id="c-password" minlength="8" required placeholder="What you typed up there" autocomplete="new-password" title="Verify what you typed up there">
 
                     <p id="warning"></p>
@@ -145,7 +145,7 @@
 
 
                     <button type="submit" name="button">Submit</button>
-                    <a href="#" id="temp-dash-link">Go to Dashboard Page</a>
+                    <a href="../dashboard" id="temp-dash-link" title="Temporary link to dashboard. Replaces backend signup functionalities.">Go to Dashboard Page</a>
 
                     <p>Already have an account? <a href="../login">Login</a></p>
 
