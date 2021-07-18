@@ -180,25 +180,36 @@ header nav {
   z-index: 10;
   right: 0;
   width: 0;
-  height: 100vh;
+  height: 100%;
   padding: 0;
   color: white;
   background: #006633;
   transition: 0.4s ease-in-out;
 }
-header nav div#main-links {
+header nav div#main-links,
+header nav div.more-links {
+  height: 100%;
   padding: 5%;
   display: grid;
   place-items: center;
 }
-header nav div#main-links a {
+header nav div#main-links a,
+header nav div.more-links a {
   display: block;
   margin: 2.5vh 0;
   font-size: 1.3em;
   transition: 0.3s ease-in-out;
 }
-header nav div#main-links a:hover {
+header nav div#main-links a:hover,
+header nav div.more-links a:hover {
   color: #ffcc00;
+}
+header nav div#main-links {
+  display: none;
+}
+header nav div.more-links {
+  width: 0;
+  height: 100vh;
 }
 header nav.active {
   width: 100%;

@@ -13,16 +13,20 @@ header {
         z-index: 10;
         right: 0;
         width: 0;
-        height: 100vh;
+        height: 100%;
         padding: 0;
         color: white;
         background: $dark-green;
         transition: 0.4s ease-in-out;
+        // display: flex;
 
-        div#main-links {
+        div#main-links,
+        div.more-links {
+            height: 100%;
             padding: 5%;
             display: grid;
             place-items: center;
+            // display: none;
 
             a {
                 display: block;
@@ -34,6 +38,15 @@ header {
             a:hover {
                 color: $bright-yellow;
             }
+        }
+
+        div#main-links {
+            display: none;
+        }
+
+        div.more-links {
+            width: 0;
+            height: 100vh;
         }
     }
 
