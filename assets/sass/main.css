@@ -192,6 +192,8 @@ header nav div.more-links {
   padding: 5%;
   display: grid;
   place-items: center;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
 }
 header nav div#main-links a,
 header nav div.more-links a {
@@ -199,17 +201,25 @@ header nav div.more-links a {
   margin: 2.5vh 0;
   font-size: 1.3em;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 header nav div#main-links a:hover,
 header nav div.more-links a:hover {
   color: #ffcc00;
 }
-header nav div#main-links {
+header nav div#main-links.active {
   display: none;
+  height: 0;
 }
 header nav div.more-links {
+  position: absolute;
   width: 0;
-  height: 100vh;
+  height: 80vh;
+  padding: 0;
+}
+header nav div.more-links.active {
+  width: 100%;
+  padding: 10% 5%;
 }
 header nav.active {
   width: 100%;
@@ -257,12 +267,21 @@ header span#hamburger-menu-container span:nth-of-type(2).active {
   margin-left: -20%;
 }
 
+body.active {
+  overflow-y: hidden;
+}
+
 @media (max-width: 800px) {
-  header nav div#main-links {
+  header nav div#main-links,
+header nav div.more-links {
     padding-top: 5em;
   }
-  header nav div#main-links a {
+  header nav div#main-links a,
+header nav div.more-links a {
     font-size: 1em;
+  }
+  header nav div.more-links.active {
+    padding-top: 5em;
   }
   header img {
     width: 6em;

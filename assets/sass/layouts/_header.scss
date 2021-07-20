@@ -18,7 +18,6 @@ header {
         color: white;
         background: $dark-green;
         transition: 0.4s ease-in-out;
-        // display: flex;
 
         div#main-links,
         div.more-links {
@@ -26,13 +25,15 @@ header {
             padding: 5%;
             display: grid;
             place-items: center;
-            // display: none;
+            overflow: hidden;
+            transition: 0.4s ease-in-out;
 
             a {
                 display: block;
                 margin: 2.5vh 0;
                 font-size: 1.3em;
                 transition: .3s ease-in-out;
+                cursor: pointer;
             }
 
             a:hover {
@@ -40,13 +41,22 @@ header {
             }
         }
 
-        div#main-links {
+        div#main-links.active {
             display: none;
+            height: 0;
         }
 
+
         div.more-links {
+            position: absolute;
             width: 0;
-            height: 100vh;
+            height: 80vh;
+            padding: 0;
+        }
+
+        div.more-links.active {
+            width: 100%;
+            padding: 10% 5%;
         }
     }
 
@@ -114,15 +124,24 @@ header {
     // Hamburger Icon Styling Ends
 }
 
+// toggles it with the sidebar
+body.active {
+    overflow-y: hidden;
+}
 
 @media (max-width: 800px) {
     header {
         nav {
-            div#main-links {
+            div#main-links,
+            div.more-links {
                 padding-top: 5em;
                 a {
                     font-size: 1em;
                 }
+            }
+
+            div.more-links.active {
+                padding-top: 5em;
             }
         }
         img {

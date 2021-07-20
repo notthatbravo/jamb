@@ -9,6 +9,7 @@ hamburgerIcon.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
     sidebar.classList.toggle('active');
+    document.body.classList.toggle('active');
 
     line1.classList.toggle('active');
     line2.classList.toggle('active');
@@ -18,6 +19,8 @@ function toggleMenu() {
 
 
 // Toggling sub-links inside the nav
+// The main link container
+const mainLinks = document.querySelector('#main-links')
 
 // The containers
 const subAboutLinks = document.querySelector('.about-links');
@@ -34,10 +37,21 @@ const subStatsToggler = document.querySelector('#stats-toggler');
 // Making shit work
 // Need to refactor this thing to make use of loops and dictionaries / objects
 subAboutToggler.addEventListener('click', function() {
-    sidebar.style.background = "red";
+    mainLinks.classList.toggle('active');
+    subAboutLinks.classList.toggle('active');
 });
 
+subQuickLinksToggler.addEventListener('click', function() {
+    mainLinks.classList.toggle('active');
+    subQuickLinks.classList.toggle('active');
+});
 
-// subQuickLinksToggler
-// subNewsToggler
-// subStatsToggler
+subNewsToggler.addEventListener('click', function() {
+    mainLinks.classList.toggle('active');
+    subNewsLinks.classList.toggle('active');
+});
+
+subStatsToggler.addEventListener('click', function() {
+    mainLinks.classList.toggle('active');
+    subStatsLinks.classList.toggle('active');
+});
