@@ -34,6 +34,12 @@ const subQuickLinksToggler = document.querySelector('#quick-links-toggler');
 const subNewsToggler = document.querySelector('#news-toggler');
 const subStatsToggler = document.querySelector('#stats-toggler');
 
+// Going back
+const subAboutBack = document.querySelector('#about-go-back');
+const subQuickLinksBack = document.querySelector('#quick-links-go-back');
+const subNewsBack = document.querySelector('#news-go-back');
+const subStatsBack = document.querySelector('#stats-go-back');
+
 // Making shit work
 // Need to refactor this thing to make use of loops and dictionaries / objects
 subAboutToggler.addEventListener('click', function() {
@@ -52,6 +58,28 @@ subNewsToggler.addEventListener('click', function() {
 });
 
 subStatsToggler.addEventListener('click', function() {
+    mainLinks.classList.toggle('active');
+    subStatsLinks.classList.toggle('active');
+});
+
+
+// Undoing Toggle
+subAboutBack.addEventListener('click', function() {
+    mainLinks.classList.toggle('active');
+    subAboutLinks.classList.toggle('active');
+});
+
+subQuickLinksBack.addEventListener('click', function() {
+    mainLinks.classList.toggle('active');
+    subQuickLinks.classList.toggle('active');
+});
+
+subNewsBack.addEventListener('click', function() {
+    mainLinks.classList.toggle('active');
+    subNewsLinks.classList.toggle('active');
+});
+
+subStatsBack.addEventListener('click', function() {
     mainLinks.classList.toggle('active');
     subStatsLinks.classList.toggle('active');
 });

@@ -79,7 +79,7 @@ footer {
 
             a:hover {
                 i {
-                    color: $footer-bg;
+                    color: $bright-yellow;
                 }
             }
         }
@@ -90,6 +90,12 @@ footer {
 
         div:last-of-type {
             text-align: right;
+
+            p {
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }

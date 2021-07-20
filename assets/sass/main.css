@@ -145,13 +145,16 @@ footer div.bottom-container div.column:first-of-type a i {
   transition: 0.4s ease-in-out;
 }
 footer div.bottom-container div.column:first-of-type a:hover i {
-  color: #669933;
+  color: #ffcc00;
 }
 footer div.bottom-container div:nth-of-type(2) {
   text-align: center;
 }
 footer div.bottom-container div:last-of-type {
   text-align: right;
+}
+footer div.bottom-container div:last-of-type p a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 800px) {
@@ -188,6 +191,8 @@ header nav {
 }
 header nav div#main-links,
 header nav div.more-links {
+  position: absolute;
+  width: 100%;
   height: 100%;
   padding: 5%;
   display: grid;
@@ -208,14 +213,20 @@ header nav div.more-links a:hover {
   color: #ffcc00;
 }
 header nav div#main-links.active {
-  display: none;
+  width: 0;
   height: 0;
+  padding: 0;
 }
 header nav div.more-links {
-  position: absolute;
   width: 0;
   height: 80vh;
   padding: 0;
+}
+header nav div.more-links a.go-back {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  color: #ffcc00;
 }
 header nav div.more-links.active {
   width: 100%;
@@ -625,7 +636,6 @@ section.efacility-signup-container div.left-column h1 {
 section.efacility-login-container div.right-column,
 section.efacility-signup-container div.right-column {
   padding: 10%;
-  border: 3px solid #006633;
 }
 section.efacility-login-container div.right-column form p#warning,
 section.efacility-signup-container div.right-column form p#warning {
