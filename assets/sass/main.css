@@ -227,6 +227,10 @@ header nav div.more-links a.go-back {
   left: 5%;
   top: 5%;
   color: #ffcc00;
+  width: 2em;
+}
+header nav div.more-links a.go-back i {
+  font-size: 1.3em;
 }
 header nav div.more-links.active {
   width: 100%;
