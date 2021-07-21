@@ -312,6 +312,49 @@ header nav div.more-links a {
     width: 10%;
   }
 }
+/*Styling the Preloader*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #006633;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 section.hero {
   padding-top: 10em;
   color: white;
@@ -408,7 +451,7 @@ section.news div.flex div.card {
   border-radius: 5px;
   background: white;
 }
-section.news div.flex div.card span#close-btn {
+section.news div.flex div.card span.close-btn {
   display: none;
 }
 section.news div.flex div.card h3 {
@@ -429,12 +472,12 @@ section.news div.flex div.card p {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-section.news div.flex div.card span#read-more-btn {
+section.news div.flex div.card span.read-more-btn {
   color: #990033;
   font-size: 0.8em;
   cursor: pointer;
 }
-section.news div.flex div.card span#read-more-btn:hover {
+section.news div.flex div.card span.read-more-btn:hover {
   text-decoration: underline;
 }
 section.news div.flex div.card h4 {
@@ -455,7 +498,7 @@ section.news div.flex div.opened-news-card {
   border-radius: 5px;
   overflow-y: scroll;
 }
-section.news div.flex div.opened-news-card span#close-btn {
+section.news div.flex div.opened-news-card span.close-btn {
   display: block;
   font-size: 2em;
   float: right;
@@ -463,7 +506,7 @@ section.news div.flex div.opened-news-card span#close-btn {
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
-section.news div.flex div.opened-news-card span#close-btn:hover {
+section.news div.flex div.opened-news-card span.close-btn:hover {
   font-size: 3em;
 }
 section.news div.flex div.opened-news-card h3 {
@@ -483,7 +526,7 @@ section.news div.flex div.opened-news-card p {
   overflow: unset;
   text-overflow: unset;
 }
-section.news div.flex div.opened-news-card span#read-more-btn {
+section.news div.flex div.opened-news-card span.read-more-btn {
   display: none;
 }
 section.news div.flex div.opened-news-card h4 {

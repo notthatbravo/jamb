@@ -1,3 +1,50 @@
+/*Styling the Preloader*/
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	overflow: hidden;
+	background: #fff;
+}
+
+#preloader:before {
+	content: "";
+	position: fixed;
+	top: calc(50% - 30px);
+	left: calc(50% - 30px);
+	border: 6px solid $dark-green;
+	border-top-color: #fff;
+	border-bottom-color: #fff;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	-webkit-animation: animate-preloader 1s linear infinite;
+	animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes animate-preloader {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
 section.hero {
     padding-top: 10em;
     color: white;
@@ -113,7 +160,7 @@ section.news {
             border-radius: 5px;
             background: white;
 
-            span#close-btn {
+            span.close-btn {
                 display: none;
             }
 
@@ -137,13 +184,13 @@ section.news {
                 text-overflow: ellipsis;
             }
 
-            span#read-more-btn {
+            span.read-more-btn {
                 color: $wine;
                 font-size: 0.8em;
                 cursor: pointer;
             }
 
-            span#read-more-btn:hover {
+            span.read-more-btn:hover {
                 text-decoration: underline;
             }
 
@@ -168,7 +215,7 @@ section.news {
             border-radius: 5px;
             overflow-y: scroll;
 
-            span#close-btn {
+            span.close-btn {
                 display: block;
                 font-size: 2em;
                 float: right;
@@ -177,7 +224,7 @@ section.news {
                 transition: 0.3s ease-in-out;
             }
 
-            span#close-btn:hover {
+            span.close-btn:hover {
                 font-size: 3em;
             }
 
@@ -200,7 +247,7 @@ section.news {
                 text-overflow: unset;
             }
 
-            span#read-more-btn {
+            span.read-more-btn {
                 display: none;
             }
 
