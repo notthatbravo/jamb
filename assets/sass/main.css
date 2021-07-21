@@ -83,6 +83,11 @@ section h2 {
   text-decoration-color: #990033;
 }
 
+@media (max-width: 800px) {
+  section {
+    padding-top: 5em;
+  }
+}
 footer {
   padding: 5%;
   background: #669933;
@@ -568,22 +573,28 @@ section.explore div.flex div.card-container:hover div.inner-container {
     margin: 5% 0 5% 0;
   }
 
+  section.mission-vision {
+    padding-top: 0;
+  }
+  section.mission-vision div.column {
+    margin: 5em 0;
+  }
   section.mission-vision div.column h2 {
     margin: 0;
-    text-align: center;
+    text-align: left;
   }
   section.mission-vision div#left-column {
-    padding-left: 5%;
+    border: 0;
+    padding: 0;
   }
   section.mission-vision div#right-column {
-    margin-top: 10%;
-    border-left: 1px solid black;
-    padding-left: 0;
-  }
-  section.mission-vision div#right-column p {
-    padding-left: 5%;
+    border: 0;
+    padding: 0;
   }
 
+  section.core-values {
+    padding-bottom: 2.5em;
+  }
   section.core-values h2 {
     width: 100%;
     margin: 0;

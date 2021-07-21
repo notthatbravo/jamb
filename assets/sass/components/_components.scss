@@ -20,3 +20,10 @@ section {
         text-decoration-color: $wine;
     }
 }
+
+
+@media (max-width: 800px) {
+	section {
+		padding-top: 5em;
+	}
+}

@@ -320,29 +320,28 @@ section.explore {
     }
 
     section.mission-vision {
+        padding-top: 0;
         div.column {
+            margin: 5em 0;
             h2 {
                 margin: 0;
-                text-align: center;
+                text-align: left;
             }
         }
 
         div#left-column {
-            padding-left: 5%;
+            border: 0;
+            padding: 0;
         }
 
         div#right-column {
-            margin-top: 10%;
-            border-left: 1px solid black;
-            padding-left: 0;
-
-            p {
-                padding-left: 5%;
-            }
+            border: 0;
+            padding: 0;
         }
     }
 
     section.core-values {
+        padding-bottom: 2.5em;
         h2 {
             width: 100%;
             margin: 0;
