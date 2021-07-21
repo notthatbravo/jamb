@@ -36,6 +36,10 @@ header {
                 font-size: 1.3em;
                 transition: .3s ease-in-out;
                 cursor: pointer;
+
+                i {
+                    color: $bright-yellow;
+                }
             }
 
             a:hover {

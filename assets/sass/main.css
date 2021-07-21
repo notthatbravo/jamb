@@ -213,6 +213,10 @@ header nav div.more-links a {
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
+header nav div#main-links a i,
+header nav div.more-links a i {
+  color: #ffcc00;
+}
 header nav div#main-links a:hover,
 header nav div.more-links a:hover {
   color: #ffcc00;
