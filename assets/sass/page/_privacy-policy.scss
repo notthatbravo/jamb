@@ -28,3 +28,16 @@ section.privacy-policy-container {
         text-decoration: underline;
     }
 }
+
+
+@media (max-width: 800px) {
+    section.privacy-policy-container {
+        h1 {
+            font-size: 2.5em;
+        }
+
+        a {
+            font-size: 1.5em;
+        }
+    }
+}

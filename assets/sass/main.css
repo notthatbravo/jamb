@@ -177,7 +177,7 @@ footer div.bottom-container div:last-of-type p a:hover {
 header {
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 3;
   width: 100%;
   color: #006633;
   background: white;
@@ -454,6 +454,7 @@ section.news div.flex div.card {
   border: 1px solid black;
   border-radius: 5px;
   background: white;
+  transition: 0.5s ease-in-out;
 }
 section.news div.flex div.card span.close-btn {
   display: none;
@@ -496,9 +497,8 @@ section.news div.flex div.card h4 span {
 section.news div.flex div.opened-news-card {
   position: absolute;
   width: 95%;
-  height: 80%;
   margin-left: -1.25%;
-  z-index: 1000;
+  z-index: 2;
   border-radius: 5px;
   overflow-y: scroll;
 }
@@ -660,6 +660,15 @@ section.explore div.flex div.card-container:hover div.inner-container {
   section.news div.flex div.card {
     margin: 5% 0;
     padding: 5%;
+  }
+  section.news div.flex div.opened-news-card h3 {
+    font-size: 1.5em;
+  }
+  section.news div.flex div.opened-news-card p {
+    font-size: 1.1em;
+  }
+  section.news div.flex div.opened-news-card h4 {
+    font-size: 0.9em;
   }
 
   section.explore div.flex div.card-container {
@@ -864,6 +873,15 @@ section.privacy-policy-container a {
 }
 section.privacy-policy-container a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  section.privacy-policy-container h1 {
+    font-size: 2.5em;
+  }
+  section.privacy-policy-container a {
+    font-size: 1.5em;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
