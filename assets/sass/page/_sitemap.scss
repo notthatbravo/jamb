@@ -1,0 +1,35 @@
+section.sitemap-container {
+    h1 {
+        color: $dark-green;
+        font-size: 4em;
+
+        a {
+            font-size: 100%;
+        }
+    }
+
+    div.flex {
+        margin: 5% 0;
+
+        div.column {
+            flex: 20%;
+            margin: 0 1.25%;
+
+            ul {
+                li {
+                    margin: 2.5% 0;
+                    padding-left: 2.5%;
+                    list-style: square;
+                    list-style-position: inside;
+
+                    a.auth-required::after {
+                        content: '*';
+                        color: $wine;
+                        font-weight: 800;
+                        padding-left: 1.25%;
+                    }
+                }
+            }
+        }
+    }
+}

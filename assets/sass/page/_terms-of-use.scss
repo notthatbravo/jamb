@@ -1,0 +1,39 @@
+section.terms-of-use-container {
+    width: 100%;
+    height: 100vh;
+    background: $desaturated-yellow;
+
+
+    p {
+        margin: 2.5% 0;
+        font-size: 1.8em;
+
+        a {
+            color: $dark-green;
+            font-size: 100%;
+        }
+    }
+
+    a#go-back {
+        display: block;
+        margin-top: 5%;
+        font-size: 1.4em;
+        color: $dark-green;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+
+@media (max-width: 800px) {
+    section.terms-of-use-container {
+        height: auto;
+
+        p {
+            margin: 10% 0;
+            font-size: 1.5em;
+        }
+    }
+}

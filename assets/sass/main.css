@@ -883,5 +883,63 @@ section.privacy-policy-container a:hover {
     font-size: 1.5em;
   }
 }
+section.terms-of-use-container {
+  width: 100%;
+  height: 100vh;
+  background: #cccc99;
+}
+section.terms-of-use-container p {
+  margin: 2.5% 0;
+  font-size: 1.8em;
+}
+section.terms-of-use-container p a {
+  color: #006633;
+  font-size: 100%;
+}
+section.terms-of-use-container a#go-back {
+  display: block;
+  margin-top: 5%;
+  font-size: 1.4em;
+  color: #006633;
+}
+section.terms-of-use-container a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  section.terms-of-use-container {
+    height: auto;
+  }
+  section.terms-of-use-container p {
+    margin: 10% 0;
+    font-size: 1.5em;
+  }
+}
+section.sitemap-container h1 {
+  color: #006633;
+  font-size: 4em;
+}
+section.sitemap-container h1 a {
+  font-size: 100%;
+}
+section.sitemap-container div.flex {
+  margin: 5% 0;
+}
+section.sitemap-container div.flex div.column {
+  flex: 20%;
+  margin: 0 1.25%;
+}
+section.sitemap-container div.flex div.column ul li {
+  margin: 2.5% 0;
+  padding-left: 2.5%;
+  list-style: square;
+  list-style-position: inside;
+}
+section.sitemap-container div.flex div.column ul li a.auth-required::after {
+  content: "*";
+  color: #990033;
+  font-weight: 800;
+  padding-left: 1.25%;
+}
 
 /*# sourceMappingURL=main.css.map */
