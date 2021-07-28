@@ -1,8 +1,7 @@
 section.main-404-container {
     display: flex;
-    padding: 0;
     height: 100vh;
-    background: red;
+    padding: 0;
 
     div {
         flex: 50%;
@@ -41,7 +40,7 @@ section.main-404-container {
 
     div.right-column {
         height: 100vh;
-        background-color: #006633;
+        background-color: #006633; // fallback incase image doesn't appear
     }
 
     img {
