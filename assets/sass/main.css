@@ -923,11 +923,15 @@ section.sitemap-container h1 a {
   font-size: 100%;
 }
 section.sitemap-container div.flex {
-  margin: 5% 0;
+  margin-top: -5%;
 }
 section.sitemap-container div.flex div.column {
   flex: 20%;
-  margin: 0 1.25%;
+  margin: 10% 1.25%;
+}
+section.sitemap-container div.flex div.column h2 a {
+  font-size: inherit;
+  font-weight: inherit;
 }
 section.sitemap-container div.flex div.column ul li {
   margin: 2.5% 0;
@@ -940,6 +944,59 @@ section.sitemap-container div.flex div.column ul li a.auth-required::after {
   color: #990033;
   font-weight: 800;
   padding-left: 1.25%;
+}
+
+section.main-404-container {
+  display: flex;
+  padding: 0;
+  height: 100vh;
+  background: red;
+}
+section.main-404-container div {
+  flex: 50%;
+  overflow: hidden;
+}
+section.main-404-container div a {
+  color: #006633;
+}
+section.main-404-container div.left-column {
+  padding: 10% 5%;
+  display: grid;
+  place-items: center;
+}
+section.main-404-container div.left-column h1 {
+  font-size: 4.5em;
+  font-weight: 600;
+  color: #006633;
+}
+section.main-404-container div.left-column p {
+  margin: 5% 0;
+  font-size: 1.3em;
+  text-align: center;
+}
+section.main-404-container div.left-column p a {
+  font-size: 100%;
+}
+section.main-404-container div.left-column p a:hover {
+  text-decoration: underline;
+}
+section.main-404-container div.right-column {
+  height: 100vh;
+  background-color: #006633;
+}
+section.main-404-container img {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  section.main-404-container {
+    display: block;
+    height: unset;
+  }
+  section.main-404-container div {
+    height: 100vh;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
