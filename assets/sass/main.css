@@ -359,7 +359,7 @@ header nav div.more-links a {
     transform: rotate(360deg);
   }
 }
-section.hero {
+section.index-hero {
   padding-top: 10em;
   color: white;
   background-color: #006633;
@@ -370,20 +370,20 @@ section.hero {
   background-blend-mode: multiply;
   background-attachment: fixed;
 }
-section.hero h1 {
+section.index-hero h1 {
   margin-right: 40%;
   font-size: 3.8em;
   font-weight: 600;
 }
-section.hero p {
+section.index-hero p {
   margin: 2% 40% 2% 0;
   font-size: 1.2em;
 }
-section.hero a {
+section.index-hero a {
   display: inline-block;
   width: 15em;
 }
-section.hero a button {
+section.index-hero a button {
   width: 100%;
   height: 3.5em;
   border: none;
@@ -392,12 +392,12 @@ section.hero a button {
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
-section.hero a button:hover {
+section.index-hero a button:hover {
   color: white;
   background: #006633;
   border-bottom: 1px solid white;
 }
-section.hero a:last-of-type {
+section.index-hero a:last-of-type {
   margin-left: 2.5%;
 }
 
@@ -605,18 +605,18 @@ section.explore div.flex div.card-container:hover div.inner-container {
 }
 
 @media (max-width: 800px) {
-  section.hero h1 {
+  section.index-hero h1 {
     margin-right: 0;
     font-size: 2.4em;
   }
-  section.hero p {
+  section.index-hero p {
     margin-right: 0;
     margin-bottom: 10%;
   }
-  section.hero a {
+  section.index-hero a {
     width: 100%;
   }
-  section.hero a:last-of-type {
+  section.index-hero a:last-of-type {
     margin: 5% 0 5% 0;
   }
 
@@ -849,6 +849,35 @@ section.efacility-signup-container div.right-column form a#temp-dash-link {
     padding: 0;
   }
 }
+section.support-container {
+  padding: 0;
+}
+section.support-container section.hero {
+  background: #006633;
+  text-align: center;
+}
+section.support-container section.hero h1 {
+  color: white;
+  font-size: 3em;
+  font-weight: 600;
+}
+section.support-container section.hero p {
+  margin-top: 1.25%;
+  color: white;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+section.support-container section.hero input {
+  width: 50%;
+  height: 4em;
+  margin: 5% 0;
+  padding: 0 2.5%;
+  border: none;
+  border-radius: 50px;
+  color: #990033;
+  outline-color: #006633;
+}
+
 section.privacy-policy-container {
   width: 100%;
   height: 100vh;

@@ -45,7 +45,7 @@
 	}
 }
 
-section.hero {
+section.index-hero {
     padding-top: 10em;
     color: white;
     background: {
@@ -346,7 +346,7 @@ section.explore {
 
 // Responsiveness
 @media (max-width: 800px) {
-    section.hero {
+    section.index-hero {
         h1 {
             margin-right: 0;
             font-size: 2.4em;
