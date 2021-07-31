@@ -875,9 +875,92 @@ section.support-container section.hero input {
   border: none;
   border-radius: 50px;
   color: #990033;
-  outline-color: #006633;
+  outline: 0;
+}
+section.support-container section.filter-by-topic {
+  text-align: center;
+}
+section.support-container section.filter-by-topic div.container {
+  padding: 5% 10% 0;
+}
+section.support-container section.filter-by-topic div.container div {
+  flex: 25%;
+  display: grid;
+  place-items: center;
+  height: 5em;
+  margin: 2.5%;
+  color: #006633;
+  background: transparent;
+  border: 1px solid #006633;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+section.support-container section.filter-by-topic div.container div:hover {
+  color: white;
+  background: #006633;
+  border: 0;
+}
+section.support-container section.all-articles {
+  padding-left: 15%;
+  padding-right: 15%;
+  background: #cccc99;
+}
+section.support-container section.all-articles div {
+  margin: 2.5% 0;
+  font-size: 1.3em;
+}
+section.support-container section.all-articles div details summary {
+  margin-bottom: 1.25%;
+  outline: 0;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+section.support-container section.all-articles div details summary:hover {
+  text-decoration: underline;
+}
+section.support-container section.all-articles div details p {
+  display: inline-block;
+  padding: 1.25% 2.5%;
+  margin-left: 5%;
+  border: 1px solid black;
+  color: white;
+  background: #2b9348;
+  line-height: 2em;
 }
 
+@media (max-width: 800px) {
+  section.support-container section.hero {
+    padding: 10em 5% 5em;
+    text-align: left;
+  }
+  section.support-container section.hero h1 {
+    font-size: 2.5em;
+  }
+  section.support-container section.hero p {
+    margin: 5% 0;
+  }
+  section.support-container section.hero input {
+    width: 90%;
+    height: 3em;
+    padding-left: 5%;
+  }
+  section.support-container section.filter-by-topic div.container {
+    padding: 0;
+    padding-top: 10%;
+  }
+  section.support-container section.filter-by-topic div.container div {
+    margin: 10% 0;
+  }
+  section.support-container section.all-articles {
+    padding: 10% 5%;
+  }
+  section.support-container section.all-articles div {
+    margin: 5% 0;
+  }
+  section.support-container section.all-articles div details summary {
+    font-size: 1em;
+  }
+}
 section.privacy-policy-container {
   width: 100%;
   height: 100vh;
