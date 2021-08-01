@@ -53,6 +53,7 @@ section.support-container {
                 color: white;
                 background: $dark-green;
                 border: 0;
+                border-radius: 10px;
             }
         }
     }
@@ -84,9 +85,18 @@ section.support-container {
                     padding: 1.25% 2.5%;
                     margin-left: 5%;
                     border: 1px solid black;
+                    border-radius: 10px;
                     color: white;
                     background: $dark-cyan;
                     line-height: 2em;
+
+                    a {
+                        color: $bright-yellow;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }

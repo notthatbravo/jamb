@@ -90,7 +90,7 @@ section h2 {
 }
 footer {
   padding: 5%;
-  background: #669933;
+  background: #2b9348;
 }
 footer div.top-container div.column {
   flex: 20%;
@@ -103,7 +103,7 @@ footer div.top-container div.column a {
   transition: 0.4s ease-in-out;
 }
 footer div.top-container div.column a:hover {
-  color: #990033;
+  color: #ffcc00;
 }
 footer div.top-container div.column:nth-of-type(1) {
   margin-left: 0;
@@ -899,6 +899,7 @@ section.support-container section.filter-by-topic div.container div:hover {
   color: white;
   background: #006633;
   border: 0;
+  border-radius: 10px;
 }
 section.support-container section.all-articles {
   padding-left: 15%;
@@ -923,9 +924,16 @@ section.support-container section.all-articles div details p {
   padding: 1.25% 2.5%;
   margin-left: 5%;
   border: 1px solid black;
+  border-radius: 10px;
   color: white;
   background: #2b9348;
   line-height: 2em;
+}
+section.support-container section.all-articles div details p a {
+  color: #ffcc00;
+}
+section.support-container section.all-articles div details p a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 800px) {
