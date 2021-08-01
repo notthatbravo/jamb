@@ -935,6 +935,19 @@ section.support-container section.all-articles div details p a {
 section.support-container section.all-articles div details p a:hover {
   text-decoration: underline;
 }
+section.support-container section.all-articles div details[open] summary ~ p {
+  animation: pull-down 0.2s ease-in-out;
+}
+@keyframes pull-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @media (max-width: 800px) {
   section.support-container section.hero {
