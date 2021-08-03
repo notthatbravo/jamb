@@ -948,6 +948,52 @@ section.support-container section.all-articles div details[open] summary ~ p {
     transform: translateY(0);
   }
 }
+section.support-container section.raise-ticket {
+  text-align: center;
+}
+section.support-container section.raise-ticket h1 {
+  font-size: 2.2em;
+}
+section.support-container section.raise-ticket h2 {
+  all: unset;
+  display: block;
+  margin: 2.5% 0;
+  font-size: 1.8em;
+  color: #006633;
+}
+section.support-container section.raise-ticket form {
+  width: 40%;
+  margin: 5% auto;
+}
+section.support-container section.raise-ticket form input,
+section.support-container section.raise-ticket form select,
+section.support-container section.raise-ticket form textarea {
+  display: block;
+  width: 100%;
+  height: 3.5em;
+  margin: 5% 0;
+  padding: 2.5%;
+  border: 1px solid #006633;
+  border-radius: 5px;
+  color: #990033;
+  outline-color: #006633;
+}
+section.support-container section.raise-ticket form ::placeholder {
+  color: #990033;
+  opacity: 0.8;
+}
+section.support-container section.raise-ticket form input[name=name] {
+  text-transform: capitalize;
+}
+section.support-container section.raise-ticket form input[disabled] {
+  background: #ccc;
+}
+section.support-container section.raise-ticket form textarea {
+  display: block;
+  height: 10em;
+  resize: none;
+  overflow: scroll;
+}
 
 @media (max-width: 800px) {
   section.support-container section.hero {

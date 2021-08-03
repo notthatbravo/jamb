@@ -182,6 +182,13 @@
                     </details>
                 </div>
 
+                <div class="resources">
+                    <details>
+                        <summary>How do if the University of my choice offers the course I want?</summary>
+                        <p>Use the IBASS bro or simply google.</p>
+                    </details>
+                </div>
+
 
                 <div class="support">
                     <details>
@@ -191,10 +198,38 @@
                 </div>
 
             </section>
+
+
+            <section class="raise-ticket">
+                <h1>Can't find what you're looking for?</h1>
+                <h2>Send us an email</h2>
+
+                <form action="index.html" method="post">
+                    <input type="text" name="name" placeholder="Name" autocomplete="name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+
+                    <select name="default-subject" id="select" onchange="checkvalue(this.value)">
+                        <option value="" selected>-- Select a category --</option>
+                        <option value="nin">NIN</option>
+                        <option value="efacility">E-facility</option>
+                        <option value="pre-reg">Pre-Registration</option>
+                        <option value="malpractice">Malpractice</option>
+                        <option value="others">Others</option>
+                    </select>
+
+                    <input type="text" name="subject" id="subject" placeholder="Subject" required disabled>
+                    <textarea name="message" placeholder="Type a message" required></textarea>
+                </form>
+            </section>
         </section>
 
 
 
     <script src="../assets/scripts/header.js"></script>
+
+    <script>
+        formSelect = document.getElementById('select');
+        formSubjectField = document.getElementById('subject');
+    </script>
     </body>
 </html>
