@@ -184,8 +184,8 @@
 
                 <div class="resources">
                     <details>
-                        <summary>How do if the University of my choice offers the course I want?</summary>
-                        <p>Use the IBASS bro or simply google.</p>
+                        <summary>How do I know if the University of my choice offers the course I want?</summary>
+                        <p>Use the IBASS, comrade or simply google.</p>
                     </details>
                 </div>
 
@@ -219,17 +219,92 @@
 
                     <input type="text" name="subject" id="subject" placeholder="Subject" required disabled>
                     <textarea name="message" placeholder="Type a message" required></textarea>
+
+                    <input type="file" name="file" id="file" value="Upload a file or two" accept="image/jpeg, image/x-png" capture="user" multiple>
+
+                    <p>We typically reply in a few seconds... or not.</p>
+
+                    <button type="submit" name="button">Submit</button>
                 </form>
             </section>
         </section>
 
+        <footer>
+            <div class="top-container flex">
+                <div class="column">
+                    <h3>Abuja:</h3>
+
+                        <p>
+                            Headquarters<br>
+                            Bwari, Abuja<br>
+                            PMB 189, Garki, Abuja, Nigeria
+                        </p>
 
 
-    <script src="../assets/scripts/header.js"></script>
+                    <h3>Abuja:</h3>
 
-    <script>
-        formSelect = document.getElementById('select');
-        formSubjectField = document.getElementById('subject');
-    </script>
+                        <p>
+                            JAMB Liason Office<br>
+                            4B254-6/264-8,<br>
+                            2nd Floor, Annex II<br>
+                            Federal Secretariat Complex,<br>
+                            Shehu Shagari Way, Abuja.
+                        </p>
+
+                    <h3>Lagos:</h3>
+
+                        <p>
+                            JAMB Liason Office<br>
+                            11 Ojora Road, Ikoyi, Lagos<br>
+                            P.M.B. 12748, Lagos, Lagos State.
+                        </p>
+
+                </div>
+                <div class="column">
+                    <a href="../efacility/caps">CAPS (Candidates)</a>
+                    <a href="../efacility/institutions">CAPS (Institutions)</a>
+                    <a href="../centres">CBT Management</a>
+                    <a href="../reports">Reports</a>
+                    <a href="../stock">Stock Management</a>
+                    <a href="../director-academic-programme">DAP</a>
+                </div>
+                <div class="column">
+                    <a href="../privacy-policy">Privacy Policy</a>
+                    <a href="../terms-of-use">Terms of Use</a>
+                    <a href="../sitemap">Sitemap</a>
+                </div>
+                <div class="column">
+                    <h2>Subscribe to our Weekly Bulletins</h2>
+
+                    <form action="POST">
+                        <input type="email" name="email" id="email" placeholder="Enter your email address">
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="bottom-container flex">
+                <div class="column">
+                    <a href="https://twitter.com/jambhq" target="_blank" rel="noreferrer noopener" title="Twitter"><i class="fab fa-twitter"></i></i></a>
+                    <a href="mailto:" target="_blank" rel="noreferrer noopener" title="Mail us"><i class="far fa-envelope"></i></a>
+                    <a href="https:/facebook.com/" target="_blank" rel="noreferrer noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+
+                <div class="column">
+                    <p>&copy; 2021. All Rights Reserved.</p>
+                </div>
+
+                <div class="column">
+                    <p>Built by <a href="https://github.com/zeroth-bravo" target="_blank" rel="noreferrer noopener">Bravo</a></p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../assets/scripts/header.js"></script>
+
+        <script>
+            formSelect = document.getElementById('select');
+            formSubjectField = document.getElementById('subject');
+        </script>
     </body>
 </html>

@@ -160,11 +160,47 @@ section.support-container {
                 background: #ccc;
             }
 
+            select {
+                cursor: pointer;
+            }
+
+            input[type="file"] {
+                button {
+                    display: block;
+                }
+
+                span {
+                    display: block;
+                }
+            }
+
             textarea {
                 display: block;
                 height: 10em;
                 resize: none;
                 overflow: scroll;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            button {
+                width: 10em;
+                height: 3.6em;
+                margin: 5% 0;
+                border: 1px solid $dark-green;
+                color: $dark-green;
+                background: transparent;
+                cursor: pointer;
+                transition: 0.4s ease-in-out;
+            }
+
+            button:hover {
+                color: white;
+                background: $dark-green;
+                border: 0;
+                border-radius: 5px;
             }
         }
     }
@@ -215,6 +251,20 @@ section.support-container {
                         font-size: 1em;
                     }
                 }
+            }
+        }
+
+        section.raise-ticket {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            form {
+                width: 80%;
             }
         }
     }

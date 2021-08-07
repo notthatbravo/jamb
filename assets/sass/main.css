@@ -988,11 +988,39 @@ section.support-container section.raise-ticket form input[name=name] {
 section.support-container section.raise-ticket form input[disabled] {
   background: #ccc;
 }
+section.support-container section.raise-ticket form select {
+  cursor: pointer;
+}
+section.support-container section.raise-ticket form input[type=file] button {
+  display: block;
+}
+section.support-container section.raise-ticket form input[type=file] span {
+  display: block;
+}
 section.support-container section.raise-ticket form textarea {
   display: block;
   height: 10em;
   resize: none;
   overflow: scroll;
+}
+section.support-container section.raise-ticket form p {
+  font-size: 0.9em;
+}
+section.support-container section.raise-ticket form button {
+  width: 10em;
+  height: 3.6em;
+  margin: 5% 0;
+  border: 1px solid #006633;
+  color: #006633;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+section.support-container section.raise-ticket form button:hover {
+  color: white;
+  background: #006633;
+  border: 0;
+  border-radius: 5px;
 }
 
 @media (max-width: 800px) {
@@ -1026,6 +1054,15 @@ section.support-container section.raise-ticket form textarea {
   }
   section.support-container section.all-articles div details summary {
     font-size: 1em;
+  }
+  section.support-container section.raise-ticket h1 {
+    font-size: 2em;
+  }
+  section.support-container section.raise-ticket h2 {
+    font-size: 1.6em;
+  }
+  section.support-container section.raise-ticket form {
+    width: 80%;
   }
 }
 section.privacy-policy-container {
