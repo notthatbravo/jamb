@@ -204,9 +204,86 @@ section.support-container {
             }
         }
     }
+
+
+    section.office-locations {
+        text-align: center;
+        background: $light-grayish-blue;
+
+        h3 {
+            margin: 1.25% 0;
+            font-size: 1.4em;
+        }
+
+        input {
+            float: right;
+            width: 30%;
+            height: 3.5em;
+            margin-top: 5%;
+            padding: 0 2.5%;
+            border: 1px solid $dark-green;
+            border-radius: 50px;
+            color: $wine;
+            outline: 0;
+        }
+
+        ::placeholder {
+            color: $wine;
+            opacity: 0.8;
+        }
+
+        div.container {
+            margin: 15% -2.5% 0;
+            text-align: left;
+
+            div.location {
+                flex: 20%;
+                margin: 5% 2.5%;
+
+                h4 {
+                    margin-bottom: 1.25%;
+                    font-size: 1.5em;
+                    font-weight: 500;
+                }
+
+                h5 {
+                    margin-bottom: 5%;
+                    font-size: 1.2em;
+                    font-weight: 400;
+                    color: $very-dark-blue;
+                }
+
+                p {
+                    margin-bottom: 5%;
+                }
+
+                a {
+                    display: block;
+                    font-size: 0.9em;
+                    font-weight: 500;
+                    color: $wine;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+
+                a#email {
+                    margin-top: 5%;
+                    color: $very-dark-blue;
+                }
+
+                a#google-maps {
+                    margin-top: 5%;
+                    color: $dark-green;
+                }
+            }
+        }
+    }
 }
 
 
+// Responsiveness
 @media (max-width: 800px) {
     section.support-container {
         section.hero {

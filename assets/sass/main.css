@@ -1022,6 +1022,68 @@ section.support-container section.raise-ticket form button:hover {
   border: 0;
   border-radius: 5px;
 }
+section.support-container section.office-locations {
+  text-align: center;
+  background: #e8e9eb;
+}
+section.support-container section.office-locations h3 {
+  margin: 1.25% 0;
+  font-size: 1.4em;
+}
+section.support-container section.office-locations input {
+  float: right;
+  width: 30%;
+  height: 3.5em;
+  margin-top: 5%;
+  padding: 0 2.5%;
+  border: 1px solid #006633;
+  border-radius: 50px;
+  color: #990033;
+  outline: 0;
+}
+section.support-container section.office-locations ::placeholder {
+  color: #990033;
+  opacity: 0.8;
+}
+section.support-container section.office-locations div.container {
+  margin: 15% -2.5% 0;
+  text-align: left;
+}
+section.support-container section.office-locations div.container div.location {
+  flex: 20%;
+  margin: 5% 2.5%;
+}
+section.support-container section.office-locations div.container div.location h4 {
+  margin-bottom: 1.25%;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+section.support-container section.office-locations div.container div.location h5 {
+  margin-bottom: 5%;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #011627;
+}
+section.support-container section.office-locations div.container div.location p {
+  margin-bottom: 5%;
+}
+section.support-container section.office-locations div.container div.location a {
+  display: block;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #990033;
+}
+section.support-container section.office-locations div.container div.location a:hover {
+  text-decoration: underline;
+}
+section.support-container section.office-locations div.container div.location a#email {
+  margin-top: 5%;
+  color: #011627;
+}
+section.support-container section.office-locations div.container div.location a#google-maps {
+  margin-top: 5%;
+  color: #006633;
+}
 
 @media (max-width: 800px) {
   section.support-container section.hero {
