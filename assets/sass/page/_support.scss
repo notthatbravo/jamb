@@ -147,11 +147,6 @@ section.support-container {
                 outline-color: $dark-green;
             }
 
-            ::placeholder {
-                color: $wine;
-                opacity: 0.8;
-            }
-
             input[name="name"] {
                 text-transform: capitalize;
             }
@@ -162,16 +157,6 @@ section.support-container {
 
             select {
                 cursor: pointer;
-            }
-
-            input[type="file"] {
-                button {
-                    display: block;
-                }
-
-                span {
-                    display: block;
-                }
             }
 
             textarea {
@@ -225,11 +210,6 @@ section.support-container {
             border-radius: 50px;
             color: $wine;
             outline: 0;
-        }
-
-        ::placeholder {
-            color: $wine;
-            opacity: 0.8;
         }
 
         div.container {
@@ -333,15 +313,35 @@ section.support-container {
 
         section.raise-ticket {
             h1 {
-                font-size: 2em;
+                font-size: 1.8em;
             }
 
             h2 {
-                font-size: 1.6em;
+                font-size: 1.4em;
             }
 
             form {
-                width: 80%;
+                width: 100%;
+                margin-top: 20%;
+            }
+        }
+
+
+        section.office-locations {
+            h3 {
+                font-size: 1.2em;
+            }
+
+            input {
+                float: none;
+                width: 100%;
+                padding-left: 5%;
+            }
+
+            div.container {
+                div.location {
+                    margin-bottom: 5em;
+                }
             }
         }
     }
