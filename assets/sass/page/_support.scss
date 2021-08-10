@@ -2,6 +2,7 @@ section.support-container {
     padding: 0;
 
     section.hero {
+        padding: 12em 5%;
         background: $dark-green;
         text-align: center;
 
@@ -16,17 +17,6 @@ section.support-container {
             color: white;
             font-size: 1.3em;
             font-weight: 400;
-        }
-
-        input {
-            width: 50%;
-            height: 4em;
-            margin: 5% 0;
-            padding: 0 2.5%;
-            border: none;
-            border-radius: 50px;
-            color: $wine;
-            outline: 0;
         }
     }
 
@@ -63,6 +53,17 @@ section.support-container {
         padding-left: 15%;
         padding-right: 15%;
         background: $desaturated-yellow;
+
+        input {
+            width: 100%;
+            height: 4em;
+            margin: 5% 0;
+            padding: 0 2.5%;
+            border: 1px solid black;
+            border-radius: 50px;
+            color: $wine;
+            outline: 0;
+        }
 
         div {
             margin: 2.5% 0;
@@ -277,12 +278,6 @@ section.support-container {
             p {
                 margin: 5% 0;
             }
-
-            input {
-                width: 90%;
-                height: 3em;
-                padding-left: 5%;
-            }
         }
 
         section.filter-by-topic {
@@ -292,6 +287,7 @@ section.support-container {
 
                 div {
                     margin: 10% 0;
+                    height: 6em;
                 }
             }
         }
@@ -299,6 +295,11 @@ section.support-container {
 
         section.all-articles {
             padding: 10% 5%;
+
+            input {
+                height: 3em;
+                padding-left: 5%;
+            }
 
             div {
                 margin: 5% 0;

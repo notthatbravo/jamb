@@ -96,7 +96,6 @@
             <section class="hero">
                 <h1>Explore our extensive Knowledge Base</h1>
                 <p>Browse our articles and FAQs. Get help from our technical personnel.</p>
-                <input type="search" name="searchbar" placeholder="Search for keywords">
             </section>
 
             <section class="filter-by-topic">
@@ -116,6 +115,8 @@
             </section>
 
             <section class="all-articles">
+                <input type="search" name="searchbar" placeholder="Search for keywords">
+                
                 <div class="efacility">
                     <details>
                         <summary>What is E-facility?</summary>
@@ -230,7 +231,7 @@
             <section class="office-locations">
                 <h2>Office Locations</h2>
                 <h3>We have offices in every state in the nation</h3>
-                <input type="search" name="location-searchbar" placeholder="Filter states">
+                <input type="search" name="location-searchbar" id="filterStatesInput" placeholder="Filter states">
 
                 <div class="container flex">
                     <div class="location">
@@ -1030,6 +1031,7 @@
         </footer>
 
         <script src="../assets/scripts/header.js"></script>
+        <script src="../assets/scripts/support.js"></script>
 
         <script>
             formSelect = document.getElementById('select');

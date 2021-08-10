@@ -853,6 +853,7 @@ section.support-container {
   padding: 0;
 }
 section.support-container section.hero {
+  padding: 12em 5%;
   background: #006633;
   text-align: center;
 }
@@ -866,16 +867,6 @@ section.support-container section.hero p {
   color: white;
   font-size: 1.3em;
   font-weight: 400;
-}
-section.support-container section.hero input {
-  width: 50%;
-  height: 4em;
-  margin: 5% 0;
-  padding: 0 2.5%;
-  border: none;
-  border-radius: 50px;
-  color: #990033;
-  outline: 0;
 }
 section.support-container section.filter-by-topic {
   text-align: center;
@@ -905,6 +896,16 @@ section.support-container section.all-articles {
   padding-left: 15%;
   padding-right: 15%;
   background: #cccc99;
+}
+section.support-container section.all-articles input {
+  width: 100%;
+  height: 4em;
+  margin: 5% 0;
+  padding: 0 2.5%;
+  border: 1px solid black;
+  border-radius: 50px;
+  color: #990033;
+  outline: 0;
 }
 section.support-container section.all-articles div {
   margin: 2.5% 0;
@@ -1082,20 +1083,20 @@ section.support-container section.office-locations div.container div.location a#
   section.support-container section.hero p {
     margin: 5% 0;
   }
-  section.support-container section.hero input {
-    width: 90%;
-    height: 3em;
-    padding-left: 5%;
-  }
   section.support-container section.filter-by-topic div.container {
     padding: 0;
     padding-top: 10%;
   }
   section.support-container section.filter-by-topic div.container div {
     margin: 10% 0;
+    height: 6em;
   }
   section.support-container section.all-articles {
     padding: 10% 5%;
+  }
+  section.support-container section.all-articles input {
+    height: 3em;
+    padding-left: 5%;
   }
   section.support-container section.all-articles div {
     margin: 5% 0;
