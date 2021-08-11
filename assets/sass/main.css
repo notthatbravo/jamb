@@ -170,7 +170,8 @@ footer div.bottom-container div:last-of-type p a:hover {
 
 @media (max-width: 800px) {
   footer div.top-container div:first-of-type {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
+    padding: 0;
   }
   footer div.bottom-container div.column {
     margin: 5% 0;
