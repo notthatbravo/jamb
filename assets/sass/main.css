@@ -136,10 +136,6 @@ footer div.bottom-container {
 footer div.bottom-container div.column {
   flex: 33.33%;
 }
-footer div.bottom-container div.column a {
-  color: #990033;
-  font-weight: 500;
-}
 footer div.bottom-container div.column:first-of-type a {
   display: inline-grid;
   place-items: center;
@@ -163,6 +159,10 @@ footer div.bottom-container div:nth-of-type(2) {
 }
 footer div.bottom-container div:last-of-type {
   text-align: right;
+}
+footer div.bottom-container div:last-of-type p a {
+  color: white;
+  font-weight: 500;
 }
 footer div.bottom-container div:last-of-type p a:hover {
   text-decoration: underline;

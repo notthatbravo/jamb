@@ -60,11 +60,6 @@ footer {
 
         div.column {
             flex: 33.33%;
-
-            a {
-                color: $wine;
-                font-weight: 500;
-            }
         }
 
         div.column:first-of-type {
@@ -100,6 +95,11 @@ footer {
             text-align: right;
 
             p {
+                a {
+                    color: white;
+                    font-weight: 500;
+                }
+
                 a:hover {
                     text-decoration: underline;
                 }
