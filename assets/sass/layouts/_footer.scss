@@ -26,6 +26,14 @@ footer {
                 font-weight: 600;
                 margin-top: 5%;
             }
+
+            a {
+                color: $bright-yellow;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
         }
 
         div.column:last-of-type {

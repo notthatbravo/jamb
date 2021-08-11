@@ -112,6 +112,12 @@ footer div.top-container div.column:nth-of-type(1) h3 {
   font-weight: 600;
   margin-top: 5%;
 }
+footer div.top-container div.column:nth-of-type(1) a {
+  color: #ffcc00;
+}
+footer div.top-container div.column:nth-of-type(1) a:hover {
+  text-decoration: underline;
+}
 footer div.top-container div.column:last-of-type h2 {
   font-weight: 700;
   padding: 5% 0;

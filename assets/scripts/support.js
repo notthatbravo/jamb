@@ -8,12 +8,14 @@ filterStatesInput.addEventListener('keyup', function() {
         containerDiv = state[i].parentElement;
         stateValue = state[i].textContent || state[i].innerText;
         stateValue = stateValue.toLowerCase();
+        // console.log(containerDiv)
+
+        console.log(stateValue.indexOf(filter))
 
         if (stateValue.indexOf(filter) > -1) {
             containerDiv.style.display = '';
         } else {
-            containerDiv.style.background = 'red';
-            // containerDiv.style.display = 'none';
+            containerDiv.style.display = 'none';
         }
     }
 
