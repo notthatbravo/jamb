@@ -330,9 +330,29 @@ header nav div.more-links a {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 2;
+  z-index: 20;
   overflow: hidden;
   background: #fff;
+}
+#preloader button {
+  position: absolute;
+  top: 2em;
+  right: 5%;
+  width: 15em;
+  height: 3.5em;
+  border: 1px solid #006633;
+  border-radius: 5px;
+  color: #006633;
+  outline-color: #006633;
+  background: transparent;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+#preloader button:hover {
+  color: white;
+  background: #006633;
 }
 
 #preloader:before {
@@ -348,6 +368,10 @@ header nav div.more-links a {
   height: 60px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
+}
+
+#preloader.hidden {
+  display: none;
 }
 
 @-webkit-keyframes animate-preloader {

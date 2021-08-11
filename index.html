@@ -33,7 +33,9 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
-        <div id="preloader"></div>
+        <div id="preloader">
+            <button type="button" name="button" id="disable-preloader-btn">Disable Preloader</button>
+        </div>
 
         <header>
             <!-- SIDEBAR -->
@@ -336,6 +338,16 @@
     			  }
     			});
     	</script>
+
+        <!-- disable preloader manually -->
+        <script type="text/javascript">
+            disablePreloaderBtn = document.querySelector('#disable-preloader-btn');
+            preloader = document.querySelector('#preloader');
+
+            disablePreloaderBtn.addEventListener('click', function() {
+                preloader.classList.toggle('hidden');
+            })
+        </script>
 
     </body>
 </html>
