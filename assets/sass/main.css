@@ -113,7 +113,7 @@ footer div.top-container div.column:nth-of-type(1) h3 {
   margin-top: 5%;
 }
 footer div.top-container div.column:nth-of-type(1) a {
-  color: #ffcc00;
+  color: white;
 }
 footer div.top-container div.column:nth-of-type(1) a:hover {
   text-decoration: underline;
