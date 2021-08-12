@@ -1,21 +1,20 @@
 //Filtering Office Locations
 state = document.getElementsByTagName('h4');
 filterStatesInput = document.getElementById('filterStatesInput');
-filter = filterStatesInput.value.toLowerCase();
 
 filterStatesInput.addEventListener('keyup', function() {
+    filter = filterStatesInput.value.toLowerCase();
+
     for (i = 0; i < state.length; i++) {
         containerDiv = state[i].parentElement;
-        stateValue = state[i].textContent || state[i].innerText;
-        stateValue = stateValue.toLowerCase();
-        // console.log(containerDiv)
 
-        console.log(stateValue.indexOf(filter))
+        stateName = state[i].textContent || state[i].innerText;
+        stateName = stateName.toLowerCase();
 
-        if (stateValue.indexOf(filter) > -1) {
-            containerDiv.style.display = '';
+        if (stateName.indexOf(filter) == -1) {
+            containerDiv.style.display = 'none'
         } else {
-            containerDiv.style.display = 'none';
+            containerDiv.style.display = 'block';
         }
     }
 
