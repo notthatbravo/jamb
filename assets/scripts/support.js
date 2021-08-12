@@ -20,7 +20,6 @@ filterFaqsInput.addEventListener('keyup', function() {
 
 })
 
-console.log('How do I change my choice of institutions and/or courses?'.indexOf('choice'))
 
 //Filtering Office Locations
 state = document.getElementsByTagName('h4');
