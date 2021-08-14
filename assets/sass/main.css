@@ -905,30 +905,32 @@ section.support-container section.filter-by-topic {
 section.support-container section.filter-by-topic div.container {
   padding: 5% 10% 0;
 }
-section.support-container section.filter-by-topic div.container div {
+section.support-container section.filter-by-topic div.container a {
   flex: 25%;
+  margin: 2.5%;
+}
+section.support-container section.filter-by-topic div.container a div {
   display: grid;
   place-items: center;
   height: 5em;
-  margin: 2.5%;
   color: #006633;
   background: transparent;
   border: 1px solid #006633;
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
-section.support-container section.filter-by-topic div.container div:hover {
+section.support-container section.filter-by-topic div.container a div:hover {
   color: white;
   background: #006633;
   border: 0;
   border-radius: 10px;
 }
-section.support-container section.all-articles {
+section.support-container section.faqs {
   padding-left: 15%;
   padding-right: 15%;
   background: #cccc99;
 }
-section.support-container section.all-articles input {
+section.support-container section.faqs input {
   width: 100%;
   height: 4em;
   margin: 5% 0;
@@ -938,20 +940,20 @@ section.support-container section.all-articles input {
   color: #990033;
   outline: 0;
 }
-section.support-container section.all-articles div {
+section.support-container section.faqs div {
   margin: 2.5% 0;
   font-size: 1.3em;
 }
-section.support-container section.all-articles div details summary {
+section.support-container section.faqs div details summary {
   margin-bottom: 1.25%;
   outline: 0;
   cursor: pointer;
   font-size: 1.3em;
 }
-section.support-container section.all-articles div details summary:hover {
+section.support-container section.faqs div details summary:hover {
   text-decoration: underline;
 }
-section.support-container section.all-articles div details p {
+section.support-container section.faqs div details p {
   display: inline-block;
   padding: 1.25% 2.5%;
   margin-left: 5%;
@@ -961,13 +963,13 @@ section.support-container section.all-articles div details p {
   background: #2b9348;
   line-height: 2em;
 }
-section.support-container section.all-articles div details p a {
+section.support-container section.faqs div details p a {
   color: #ffcc00;
 }
-section.support-container section.all-articles div details p a:hover {
+section.support-container section.faqs div details p a:hover {
   text-decoration: underline;
 }
-section.support-container section.all-articles div details[open] summary ~ p {
+section.support-container section.faqs div details[open] summary ~ p {
   animation: pull-down 0.2s ease-in-out;
 }
 @keyframes pull-down {
@@ -1118,21 +1120,23 @@ section.support-container section.office-locations div.container div.location a#
     padding: 0;
     padding-top: 10%;
   }
-  section.support-container section.filter-by-topic div.container div {
+  section.support-container section.filter-by-topic div.container a {
     margin: 10% 0;
+  }
+  section.support-container section.filter-by-topic div.container a div {
     height: 6em;
   }
-  section.support-container section.all-articles {
+  section.support-container section.faqs {
     padding: 10% 5%;
   }
-  section.support-container section.all-articles input {
+  section.support-container section.faqs input {
     height: 3em;
     padding-left: 5%;
   }
-  section.support-container section.all-articles div {
+  section.support-container section.faqs div {
     margin: 5% 0;
   }
-  section.support-container section.all-articles div details summary {
+  section.support-container section.faqs div details summary {
     font-size: 1em;
   }
   section.support-container section.raise-ticket h1 {

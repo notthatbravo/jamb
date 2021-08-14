@@ -102,19 +102,19 @@
                 <h2>Filter by topic</h2>
 
                 <div class="flex container">
-                    <div class="card efacility">E-Facility</div>
-                    <div class="card services">Payments & Services</div>
-                    <div class="card caps">CAPS</div>
-                    <div class="card resources">Resources & Syllabus</div>
-                    <div class="card check-results">Checking Results</div>
-                    <div class="card centres">Centres</div>
-                    <div class="card institutions">Institutions</div>
-                    <div class="card intranet">Intranet</div>
-                    <div class="card support">Support</div>
+                    <a href="#faqs"><div class="card efacility">E-Facility</div></a>
+                    <a href="#faqs"><div class="card services">Payments & Services</div></a>
+                    <a href="#faqs"><div class="card caps">CAPS</div></a>
+                    <a href="#faqs"><div class="card resources">Resources & Syllabus</div></a>
+                    <a href="#faqs"><div class="card check-results">Checking Results</div></a>
+                    <a href="#faqs"><div class="card centres">Centres</div></a>
+                    <a href="#faqs"><div class="card institutions">Institutions</div></a>
+                    <a href="#faqs"><div class="card intranet">Intranet</div></a>
+                    <a href="#faqs"><div class="card support">Support</div></a>
                 </div>
             </section>
 
-            <section class="all-articles">
+            <section class="faqs" id="faqs">
                 <input type="search" name="searchbar" placeholder="Search for keywords" id="faqs-input">
 
                 <div class="efacility">
@@ -191,17 +191,91 @@
                 </div>
 
 
+                <div class="check-results">
+                    <details>
+                        <summary>Are JAMB results out?</summary>
+                        <p>Comrade, head over to the <a href="../news">News</a> page.</p>
+                    </details>
+                </div>
+
+
+                <div class="check-results">
+                    <details>
+                        <summary>How do I check my results?</summary>
+                        <p>The <a href="../view-results">Results</a> page has all you need.</p>
+                    </details>
+                </div>
+
+
+                <div class="centres">
+                    <details>
+                        <summary>How do I register my location (e.g. school) as a CBT centre?</summary>
+                        <p>Visit the <a href="../centres">CBT Centres</a> page</p>
+                    </details>
+                </div>
+
+
+                <div class="centres">
+                    <details>
+                        <summary>How do I know if a centre is accredited?</summary>
+                        <p>Browse through our catalog of accredited centres across all states. Visit the <a href="../centres">CBT Centres</a> page.</p>
+                    </details>
+                </div>
+
+
+                <div class="centres">
+                    <details>
+                        <summary>How do I report a CBT centre?</summary>
+                        <p>Fill the <a href="#raise-ticket">form</a> below. Select 'CBT Centres' as the subject. Vividly describe your experience and give the full name and address of the centre. An investigation shall be carried out. You will be jailed if na wrong info sha.</p>
+                    </details>
+                </div>
+
+
+                <div class="institutions">
+                    <details>
+                        <summary>How do I register my University as an Institution?</summary>
+                        <p>You really shouldn't be reading this, big chief.</p>
+                    </details>
+                </div>
+
+
+                <div class="institutions">
+                    <details>
+                        <summary>I forgot my password for the CAPS platform for institutions. What do I do?</summary>
+                        <p>Retire. What sort of lecturer are you?</p>
+                    </details>
+                </div>
+
+
+                <div class="intranet">
+                    <details>
+                        <summary>How can I recover my password for admin login?</summary>
+                        <p>You can't. Find a job elsewhere.</p>
+                    </details>
+                </div>
+
+
+                <div class="intranet">
+                    <details>
+                        <summary>I've not received my salary since. Why?</summary>
+                        <p>Why asking me? I'm in support, not finance.</p>
+                        <!-- <p>Oga mi, Sapa choke everybody. You no go like start Affiliate Marketing?</p> -->
+                        <!-- <p><i>I had trouble deciding which one to use. 😂</i></p> -->
+                    </details>
+                </div>
+
+
                 <div class="support">
                     <details>
                         <summary>Who created this site?</summary>
-                        <p><a href="https://github.com/zeroth-bravo" target="_blank" rel="noreferrer noopener">Bravo</a> did.</p>
+                        <p>I, Adeola <a href="https://github.com/zeroth-bravo" target="_blank" rel="noreferrer noopener">'Omo Ologo 10G'</a> ChukwuBravo did. You're welcome!</p>
                     </details>
                 </div>
 
             </section>
 
 
-            <section class="raise-ticket">
+            <section class="raise-ticket" id="raise-ticket">
                 <h1>Can't find what you're looking for?</h1>
                 <h2>Send us an email</h2>
 
@@ -215,6 +289,7 @@
                         <option value="efacility">E-facility</option>
                         <option value="pre-reg">Pre-Registration</option>
                         <option value="malpractice">Malpractice</option>
+                        <option value="cbt-centres">CBT Centres</option>
                         <option value="others">Others</option>
                     </select>
 

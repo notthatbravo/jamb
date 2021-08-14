@@ -26,30 +26,33 @@ section.support-container {
         div.container {
             padding: 5% 10% 0;
 
-            div {
+            a {
                 flex: 25%;
-                display: grid;
-                place-items: center;
-                height: 5em;
                 margin: 2.5%;
-                color: $dark-green;
-                background: transparent;
-                border: 1px solid $dark-green;
-                cursor: pointer;
-                transition: 0.4s ease-in-out;
-            }
 
-            div:hover {
-                color: white;
-                background: $dark-green;
-                border: 0;
-                border-radius: 10px;
+                div {
+                    display: grid;
+                    place-items: center;
+                    height: 5em;
+                    color: $dark-green;
+                    background: transparent;
+                    border: 1px solid $dark-green;
+                    cursor: pointer;
+                    transition: 0.4s ease-in-out;
+                }
+
+                div:hover {
+                    color: white;
+                    background: $dark-green;
+                    border: 0;
+                    border-radius: 10px;
+                }
             }
         }
     }
 
 
-    section.all-articles {
+    section.faqs {
         padding-left: 15%;
         padding-right: 15%;
         background: $desaturated-yellow;
@@ -285,15 +288,18 @@ section.support-container {
                 padding: 0;
                 padding-top: 10%;
 
-                div {
+                a {
                     margin: 10% 0;
-                    height: 6em;
+                    
+                    div {
+                        height: 6em;
+                    }
                 }
             }
         }
 
 
-        section.all-articles {
+        section.faqs {
             padding: 10% 5%;
 
             input {
