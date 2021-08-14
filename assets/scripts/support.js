@@ -1,4 +1,22 @@
-//Filtering FAQs
+// Filtering faqs with topic categories
+
+// The categories to filter by
+filterByTopicSection = document.querySelector('.filter-by-topic');
+filterDivList = filterByTopicSection.getElementsByClassName('card');
+// console.log(filterDiv);
+
+
+// The FAQs Container Div themselves
+faqSection = document.querySelector('.faqs');
+faqContainerDiv = faqSection.getElementsByTagName('div');
+// console.log(faqContainerDiv);
+
+
+filterDivList.forEach(element => {console.log(element)});
+
+
+
+//Filtering FAQs with Input field
 summary = document.getElementsByTagName('summary');
 filterFaqsInput = document.getElementById('faqs-input');
 
