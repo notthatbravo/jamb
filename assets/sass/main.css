@@ -1137,11 +1137,9 @@ section.support-container section.office-locations div.container div.location a#
     padding: 0;
     padding-top: 10%;
   }
-  section.support-container section.filter-by-topic div.container a {
-    margin: 10% 0;
-  }
   section.support-container section.filter-by-topic div.container a div {
     height: 6em;
+    margin: 2.5% 0;
   }
   section.support-container section.faqs {
     padding: 10% 5%;
