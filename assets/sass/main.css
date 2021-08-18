@@ -1148,6 +1148,9 @@ section.support-container section.office-locations div.container div.location a#
     height: 3em;
     padding-left: 5%;
   }
+  section.support-container section.faqs p.edit-filter {
+    font-size: 1em;
+  }
   section.support-container section.faqs div {
     margin: 5% 0;
   }
