@@ -68,6 +68,28 @@ section.support-container {
             outline: 0;
         }
 
+        p.edit-filter {
+            display: none;
+            margin: 1.25% 0;
+            color: $very-dark-blue;
+            font-size: 1.3em;
+            font-weight: 400;
+            cursor: pointer;
+
+            a {
+                all: inherit;
+            }
+        }
+
+        p.edit-filter:last-of-type {
+            margin-bottom: 5%;
+        }
+
+        p.edit-filter:hover {
+            text-decoration: underline;
+        }
+
+
         div {
             margin: 2.5% 0;
             font-size: 1.3em;
@@ -290,7 +312,7 @@ section.support-container {
 
                 a {
                     margin: 10% 0;
-                    
+
                     div {
                         height: 6em;
                     }

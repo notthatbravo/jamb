@@ -940,6 +940,23 @@ section.support-container section.faqs input {
   color: #990033;
   outline: 0;
 }
+section.support-container section.faqs p.edit-filter {
+  display: none;
+  margin: 1.25% 0;
+  color: #011627;
+  font-size: 1.3em;
+  font-weight: 400;
+  cursor: pointer;
+}
+section.support-container section.faqs p.edit-filter a {
+  all: inherit;
+}
+section.support-container section.faqs p.edit-filter:last-of-type {
+  margin-bottom: 5%;
+}
+section.support-container section.faqs p.edit-filter:hover {
+  text-decoration: underline;
+}
 section.support-container section.faqs div {
   margin: 2.5% 0;
   font-size: 1.3em;

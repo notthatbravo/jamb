@@ -8,11 +8,46 @@ filterDivList = filterByTopicSection.getElementsByClassName('card');
 
 // The FAQs Container Div themselves
 faqSection = document.querySelector('.faqs');
-faqContainerDiv = faqSection.getElementsByTagName('div');
-// console.log(faqContainerDiv);
+faqContainerDivList = faqSection.getElementsByTagName('div');
+// console.log(faqContainerDivList);
+
+// Editing the filter
+clearFilter = document.querySelector('#clear-filter');
+changeFilter = document.querySelector('#change-filter');
 
 
-filterDivList.forEach(element => {console.log(element)});
+for (i = 0; i < filterDivList.length; i++) {
+    filterDivContainer = filterDivList[i]
+    filterDivContainer.addEventListener('click', function()  {
+        categoryName = this.classList[1]
+        // console.log(categoryName);
+
+        for (j = 0; j < faqContainerDivList.length; j++) {
+            faqContainerDiv = faqContainerDivList[j];
+            faqContainerDivCategory = faqContainerDiv.classList[0];
+
+            if (categoryName == faqContainerDivCategory) {
+                faqContainerDiv.style.display = 'block';
+            } else {
+                faqContainerDiv.style.display = 'none';
+            }
+        }
+
+        clearFilter.style.display = 'block';
+        changeFilter.style.display = 'block';
+    })
+
+    clearFilter.addEventListener('click', function() {
+        clearFilter.style.display = 'none';
+        changeFilter.style.display = 'none';
+
+
+        for (j = 0; j < faqContainerDivList.length; j++) {
+            faqContainerDiv = faqContainerDivList[j];
+            faqContainerDiv.style.display = 'block';
+        }
+    })
+}
 
 
 
