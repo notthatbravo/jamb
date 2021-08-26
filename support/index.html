@@ -98,6 +98,7 @@
                 <p>Browse our articles and FAQs. Get help from our technical personnel.</p>
             </section>
 
+
             <section class="filter-by-topic" id="filter-by-topic">
                 <h2>Filter by topic</h2>
 
@@ -113,6 +114,7 @@
                     <a href="#faqs"><div class="card support">Support</div></a>
                 </div>
             </section>
+
 
             <section class="faqs" id="faqs">
                 <input type="search" name="searchbar" placeholder="Search for keywords" id="faqs-input">
@@ -286,7 +288,7 @@
                     <input type="text" name="name" placeholder="Name" autocomplete="name" required>
                     <input type="email" name="email" placeholder="Email Address" required>
 
-                    <select name="default-subject" id="select" onchange="checkvalue(this.value)">
+                    <select name="default-subject" id="select">
                         <option value="" selected>-- Select a category --</option>
                         <option value="nin">NIN</option>
                         <option value="efacility">E-facility</option>
@@ -1092,10 +1094,5 @@
 
         <script src="../assets/scripts/header.js"></script>
         <script src="../assets/scripts/support.js"></script>
-
-        <script>
-            formSelect = document.getElementById('select');
-            formSubjectField = document.getElementById('subject');
-        </script>
     </body>
 </html>

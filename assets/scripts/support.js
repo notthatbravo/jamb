@@ -74,6 +74,22 @@ filterFaqsInput.addEventListener('keyup', function() {
 })
 
 
+// Enabling subject field in form
+selectField = document.querySelector('#select');
+subjectField = document.querySelector('#subject');
+
+
+selectField.addEventListener('click', function() {
+
+    if (selectField.value == 'others') {
+        subjectField.disabled = false;
+    } else {
+        subjectField.disabled = true;
+    }
+})
+
+
+
 //Filtering Office Locations
 state = document.getElementsByTagName('h4');
 filterStatesInput = document.getElementById('filterStatesInput');
