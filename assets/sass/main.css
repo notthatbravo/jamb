@@ -773,6 +773,16 @@ section.efacility-login-container div.right-column form input[type=text],
 section.efacility-signup-container div.right-column form input[type=text] {
   text-transform: capitalize;
 }
+section.efacility-login-container div.right-column form input[type=password],
+section.efacility-signup-container div.right-column form input[type=password] {
+  font-weight: 800;
+  letter-spacing: 0.3em;
+}
+section.efacility-login-container div.right-column form ::placeholder,
+section.efacility-signup-container div.right-column form ::placeholder {
+  font-weight: 300;
+  letter-spacing: initial;
+}
 section.efacility-login-container div.right-column form button,
 section.efacility-signup-container div.right-column form button {
   width: 10em;

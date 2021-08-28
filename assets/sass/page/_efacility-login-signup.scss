@@ -65,6 +65,16 @@ section.efacility-signup-container {
                 text-transform: capitalize;
             }
 
+            input[type="password"] {
+                font-weight: 800;
+                letter-spacing: 0.3em;
+            }
+
+            ::placeholder {
+                font-weight: 300;
+                letter-spacing: initial;
+            }
+
             button {
                 width: 10em;
                 height: 3em;
