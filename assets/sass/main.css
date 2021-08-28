@@ -707,7 +707,8 @@ section.explore div.flex div.card-container:hover div.inner-container {
   }
 }
 section.efacility-login-container,
-section.efacility-signup-container {
+section.efacility-signup-container,
+section.efacility-resetpassword-container {
   width: 100%;
   height: 100vh;
   padding: 5em 0 0;
@@ -716,50 +717,60 @@ section.efacility-signup-container {
 section.efacility-login-container div.left-column,
 section.efacility-login-container div.right-column,
 section.efacility-signup-container div.left-column,
-section.efacility-signup-container div.right-column {
+section.efacility-signup-container div.right-column,
+section.efacility-resetpassword-container div.left-column,
+section.efacility-resetpassword-container div.right-column {
   flex: 50%;
   height: 100%;
   transition: color 1s ease-in-out, background 1s ease-in-out;
 }
 section.efacility-login-container div.left-column,
-section.efacility-signup-container div.left-column {
+section.efacility-signup-container div.left-column,
+section.efacility-resetpassword-container div.left-column {
   display: grid;
   place-items: center;
   padding: 5%;
   background: #006633;
 }
 section.efacility-login-container div.left-column h1,
-section.efacility-signup-container div.left-column h1 {
+section.efacility-signup-container div.left-column h1,
+section.efacility-resetpassword-container div.left-column h1 {
   font-size: 4em;
   font-weight: 600;
   color: white;
   transition: color 2s ease-in-out;
 }
 section.efacility-login-container div.right-column,
-section.efacility-signup-container div.right-column {
+section.efacility-signup-container div.right-column,
+section.efacility-resetpassword-container div.right-column {
   padding: 10%;
 }
-section.efacility-login-container div.right-column form p#warning,
-section.efacility-signup-container div.right-column form p#warning {
+section.efacility-login-container form p#warning,
+section.efacility-signup-container form p#warning,
+section.efacility-resetpassword-container form p#warning {
   margin: -5% 0 5%;
   color: red;
   font-weight: 500;
   text-transform: full-width;
 }
-section.efacility-login-container div.right-column form label,
-section.efacility-signup-container div.right-column form label {
+section.efacility-login-container form label,
+section.efacility-signup-container form label,
+section.efacility-resetpassword-container form label {
   font-size: 1.3em;
   cursor: pointer;
 }
-section.efacility-login-container div.right-column form label.required-field::after,
-section.efacility-signup-container div.right-column form label.required-field::after {
+section.efacility-login-container form label.required-field::after,
+section.efacility-signup-container form label.required-field::after,
+section.efacility-resetpassword-container form label.required-field::after {
   content: "*";
   color: #990033;
 }
-section.efacility-login-container div.right-column form input,
-section.efacility-login-container div.right-column form select,
-section.efacility-signup-container div.right-column form input,
-section.efacility-signup-container div.right-column form select {
+section.efacility-login-container form input,
+section.efacility-login-container form select,
+section.efacility-signup-container form input,
+section.efacility-signup-container form select,
+section.efacility-resetpassword-container form input,
+section.efacility-resetpassword-container form select {
   width: 100%;
   margin: 2.5% 0 10%;
   height: 3em;
@@ -769,22 +780,26 @@ section.efacility-signup-container div.right-column form select {
   color: #990033;
   outline-color: #006633;
 }
-section.efacility-login-container div.right-column form input[type=text],
-section.efacility-signup-container div.right-column form input[type=text] {
+section.efacility-login-container form input[type=text],
+section.efacility-signup-container form input[type=text],
+section.efacility-resetpassword-container form input[type=text] {
   text-transform: capitalize;
 }
-section.efacility-login-container div.right-column form input[type=password],
-section.efacility-signup-container div.right-column form input[type=password] {
+section.efacility-login-container form input[type=password],
+section.efacility-signup-container form input[type=password],
+section.efacility-resetpassword-container form input[type=password] {
   font-weight: 800;
   letter-spacing: 0.3em;
 }
-section.efacility-login-container div.right-column form ::placeholder,
-section.efacility-signup-container div.right-column form ::placeholder {
+section.efacility-login-container form ::placeholder,
+section.efacility-signup-container form ::placeholder,
+section.efacility-resetpassword-container form ::placeholder {
   font-weight: 300;
   letter-spacing: initial;
 }
-section.efacility-login-container div.right-column form button,
-section.efacility-signup-container div.right-column form button {
+section.efacility-login-container form button,
+section.efacility-signup-container form button,
+section.efacility-resetpassword-container form button {
   width: 10em;
   height: 3em;
   border: 0px;
@@ -794,25 +809,29 @@ section.efacility-signup-container div.right-column form button {
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
-section.efacility-login-container div.right-column form button:hover,
-section.efacility-signup-container div.right-column form button:hover {
+section.efacility-login-container form button:hover,
+section.efacility-signup-container form button:hover,
+section.efacility-resetpassword-container form button:hover {
   background: none;
   border: 1px solid #006633;
   color: #990033;
 }
-section.efacility-login-container div.right-column form a,
-section.efacility-signup-container div.right-column form a {
+section.efacility-login-container form a,
+section.efacility-signup-container form a,
+section.efacility-resetpassword-container form a {
   display: block;
   margin: 5% 0;
   font-size: 0.9em;
   color: #990033;
 }
-section.efacility-login-container div.right-column form a:hover,
-section.efacility-signup-container div.right-column form a:hover {
+section.efacility-login-container form a:hover,
+section.efacility-signup-container form a:hover,
+section.efacility-resetpassword-container form a:hover {
   text-decoration: underline;
 }
-section.efacility-login-container div.right-column form a#temp-dash-link,
-section.efacility-signup-container div.right-column form a#temp-dash-link {
+section.efacility-login-container form a#temp-dash-link,
+section.efacility-signup-container form a#temp-dash-link,
+section.efacility-resetpassword-container form a#temp-dash-link {
   display: inline-block;
   padding-left: 2.5%;
 }
@@ -825,6 +844,33 @@ section.efacility-signup-container div.right-column p {
 }
 section.efacility-signup-container div.right-column p a {
   display: inline;
+}
+
+section.efacility-resetpassword-container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  text-align: center;
+  background: #e8e9eb;
+}
+section.efacility-resetpassword-container h1 {
+  color: #006633;
+  font-size: 3em;
+}
+section.efacility-resetpassword-container h2 {
+  all: unset;
+  display: block;
+  margin: 2.5% 0 5%;
+  color: #011627;
+  font-size: 1.2em;
+}
+section.efacility-resetpassword-container form {
+  width: 40%;
+}
+section.efacility-resetpassword-container form input {
+  display: block;
+  width: 80%;
+  margin: 2.5% auto 15%;
 }
 
 @media (max-width: 800px) {
@@ -849,45 +895,59 @@ section.efacility-signup-container div.right-column {
     border: none;
     overflow: hidden;
   }
-  section.efacility-login-container div.right-column form p#warning,
-section.efacility-signup-container div.right-column form p#warning {
+  section.efacility-login-container form p#warning,
+section.efacility-signup-container form p#warning {
     color: #ffcc00;
   }
-  section.efacility-login-container div.right-column form label.required-field::after,
-section.efacility-signup-container div.right-column form label.required-field::after {
+  section.efacility-login-container form label.required-field::after,
+section.efacility-signup-container form label.required-field::after {
     color: #ffcc00;
   }
-  section.efacility-login-container div.right-column form input,
-section.efacility-signup-container div.right-column form input {
+  section.efacility-login-container form input,
+section.efacility-signup-container form input {
     border: 1px solid black;
   }
-  section.efacility-login-container div.right-column form ::placeholder,
-section.efacility-signup-container div.right-column form ::placeholder {
+  section.efacility-login-container form ::placeholder,
+section.efacility-signup-container form ::placeholder {
     font-size: 0.85em;
   }
-  section.efacility-login-container div.right-column form button,
-section.efacility-signup-container div.right-column form button {
+  section.efacility-login-container form button,
+section.efacility-signup-container form button {
     background: white;
     color: #006633;
   }
-  section.efacility-login-container div.right-column form button:hover,
-section.efacility-signup-container div.right-column form button:hover {
+  section.efacility-login-container form button:hover,
+section.efacility-signup-container form button:hover {
     background: #990033;
     color: white;
   }
-  section.efacility-login-container div.right-column form a,
-section.efacility-signup-container div.right-column form a {
+  section.efacility-login-container form a,
+section.efacility-signup-container form a {
     color: white;
     opacity: 0.8;
   }
-  section.efacility-login-container div.right-column form a:hover,
-section.efacility-signup-container div.right-column form a:hover {
+  section.efacility-login-container form a:hover,
+section.efacility-signup-container form a:hover {
     opacity: 1;
   }
-  section.efacility-login-container div.right-column form a#temp-dash-link,
-section.efacility-signup-container div.right-column form a#temp-dash-link {
+  section.efacility-login-container form a#temp-dash-link,
+section.efacility-signup-container form a#temp-dash-link {
     display: block;
     padding: 0;
+  }
+
+  section.efacility-resetpassword-container h1 {
+    font-size: 2em;
+  }
+  section.efacility-resetpassword-container h2 {
+    font-size: 1em;
+  }
+  section.efacility-resetpassword-container form {
+    width: 100%;
+    padding: 5%;
+  }
+  section.efacility-resetpassword-container form input {
+    width: 100%;
   }
 }
 section.support-container {
