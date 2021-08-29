@@ -129,32 +129,60 @@ section.efacility-signup-container {
 
 // Reset Password Page
 section.efacility-resetpassword-container {
-    display: grid;
-    place-items: center;
     height: 100vh;
-    text-align: center;
     background: $light-grayish-blue;
 
-    h1 {
-        color: $dark-green;
-        font-size: 3em;
-    }
+    div.container{
+        width: 60%;
+        height: 80vh;
+        padding: 2.5%;
+        margin: auto;
+        border-radius: 10px;
+        background: $dark-green;
 
-    h2 {
-        all: unset;
-        display: block;
-        margin: 2.5% 0 5%;
-        color: $very-dark-blue;
-        font-size: 1.2em;
-    }
+        h1 {
+            color: white;
+            font-size: 3em;
+        }
 
-    form {
-        width: 40%;
-
-        input {
+        h2 {
+            all: unset;
             display: block;
-            width: 80%;
-            margin: 2.5% auto 15%;
+            color: $light-grayish-blue;
+            font-size: 1.2em;
+        }
+
+        form {
+            margin-top: 2.5%;
+            padding-top: 5%;
+            border-top: 1px solid white;
+
+
+            label {
+                display: block;
+                color: white;
+            }
+
+            input {
+                width: 60%;
+                margin: 2.5% 0;
+                border-color: black;
+            }
+
+            button {
+                background: black;
+            }
+
+            button:hover {
+                border-color: black;
+                color: white;
+                background: transparent;
+            }
+
+
+            a {
+                color: white;
+            }
         }
     }
 }
@@ -229,21 +257,33 @@ section.efacility-resetpassword-container {
 
 
     section.efacility-resetpassword-container {
-        h1 {
-            font-size: 2em;
-        }
+        padding-top: 10%;
 
-        h2 {
-            font-size: 1em;
-        }
-
-        form {
-            width: 100%;
+        div.container {
+            width: 90%;
             padding: 5%;
 
+            h1 {
+                font-size: 1.8em;
+            }
 
-            input {
+            h2 {
+                font-size: 1em;
+            }
+
+            form {
                 width: 100%;
+                padding: 0;
+                padding-top: 10%;
+
+                input {
+                    width: 100%;
+                }
+
+                button {
+                    margin-top: 5%;
+                    margin-bottom: 10%;
+                }
             }
         }
     }

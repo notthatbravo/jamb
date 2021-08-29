@@ -847,30 +847,51 @@ section.efacility-signup-container div.right-column p a {
 }
 
 section.efacility-resetpassword-container {
-  display: grid;
-  place-items: center;
   height: 100vh;
-  text-align: center;
   background: #e8e9eb;
 }
-section.efacility-resetpassword-container h1 {
-  color: #006633;
+section.efacility-resetpassword-container div.container {
+  width: 60%;
+  height: 80vh;
+  padding: 2.5%;
+  margin: auto;
+  border-radius: 10px;
+  background: #006633;
+}
+section.efacility-resetpassword-container div.container h1 {
+  color: white;
   font-size: 3em;
 }
-section.efacility-resetpassword-container h2 {
+section.efacility-resetpassword-container div.container h2 {
   all: unset;
   display: block;
-  margin: 2.5% 0 5%;
-  color: #011627;
+  color: #e8e9eb;
   font-size: 1.2em;
 }
-section.efacility-resetpassword-container form {
-  width: 40%;
+section.efacility-resetpassword-container div.container form {
+  margin-top: 2.5%;
+  padding-top: 5%;
+  border-top: 1px solid white;
 }
-section.efacility-resetpassword-container form input {
+section.efacility-resetpassword-container div.container form label {
   display: block;
-  width: 80%;
-  margin: 2.5% auto 15%;
+  color: white;
+}
+section.efacility-resetpassword-container div.container form input {
+  width: 60%;
+  margin: 2.5% 0;
+  border-color: black;
+}
+section.efacility-resetpassword-container div.container form button {
+  background: black;
+}
+section.efacility-resetpassword-container div.container form button:hover {
+  border-color: black;
+  color: white;
+  background: transparent;
+}
+section.efacility-resetpassword-container div.container form a {
+  color: white;
 }
 
 @media (max-width: 800px) {
@@ -936,18 +957,30 @@ section.efacility-signup-container form a#temp-dash-link {
     padding: 0;
   }
 
-  section.efacility-resetpassword-container h1 {
-    font-size: 2em;
+  section.efacility-resetpassword-container {
+    padding-top: 10%;
   }
-  section.efacility-resetpassword-container h2 {
-    font-size: 1em;
-  }
-  section.efacility-resetpassword-container form {
-    width: 100%;
+  section.efacility-resetpassword-container div.container {
+    width: 90%;
     padding: 5%;
   }
-  section.efacility-resetpassword-container form input {
+  section.efacility-resetpassword-container div.container h1 {
+    font-size: 1.8em;
+  }
+  section.efacility-resetpassword-container div.container h2 {
+    font-size: 1em;
+  }
+  section.efacility-resetpassword-container div.container form {
     width: 100%;
+    padding: 0;
+    padding-top: 10%;
+  }
+  section.efacility-resetpassword-container div.container form input {
+    width: 100%;
+  }
+  section.efacility-resetpassword-container div.container form button {
+    margin-top: 5%;
+    margin-bottom: 10%;
   }
 }
 section.support-container {
