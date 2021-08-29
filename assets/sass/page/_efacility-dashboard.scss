@@ -1,0 +1,195 @@
+section.efacility-dashboard-container {
+    padding: 0;
+    background: $light-grayish-blue;
+
+    h2 {
+        all: unset;
+    }
+
+    header {
+        all: unset;
+        display: block;
+        width: 100%;
+        padding: 1% 5%;
+        background: white;
+        border: 1px solid red;
+        overflow: hidden;
+
+        a#logo-anchor {
+            img {
+                all: unset;
+                display: block;
+                float: left;
+                width: 6em;
+            }
+        }
+    }
+
+    div.parent-container {
+        padding: 5%;
+
+        h1 {
+            margin-bottom: 5%;
+            color: $dark-green;
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+
+        div.flex {
+            div.column {
+                display: grid;
+                place-items: center;
+                height: 10em;
+                padding: 2.5% 1.25%;
+                margin: 0 2.5%;
+                border-radius: 10px;
+                box-shadow: 0 0 4px 0 #ccc;
+                background: white;
+                text-align: center;
+
+                i {
+                    color: $wine;
+                    font-size: 1.5em;
+                }
+
+                h3 {
+                    font-size: 0.9em;
+                }
+
+                h2 {
+                    margin-top: 5%;
+                    color: $wine;
+                    font-size: 1.3em;
+                    font-weight: 500;
+                }
+            }
+
+            div.column:first-of-type {
+                margin-left: 0;
+            }
+
+            div.column:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+
+    div#welcome {
+        h2 {
+            font-size: 1.5em;
+
+            span {
+                color: $dark-green;
+                font-size: 100%;
+                font-weight: 400;
+            }
+        }
+
+        h3 {
+            position: relative;
+            font-size: 1em;
+
+            span {
+                color: $very-dark-blue;
+                font-size: 100%;
+                font-weight: 500;
+                cursor: pointer;
+            }
+
+            span:hover {
+                text-decoration: underline;
+                text-decoration-style: dashed;
+            }
+        }
+
+        span#tooltip {
+            position: absolute;
+            z-index: 1;
+            left: 16%;
+            margin-top: 10px;
+            padding: 5px 10px;
+            border-radius: 10px;
+            color: white;
+            background: $very-dark-blue;
+            font-size: 0.8em;
+            text-align: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s;
+        }
+
+        span#tooltip::before {
+            content: "";
+            position: absolute;
+            top: -30%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: $very-dark-blue transparent transparent transparent;
+            transform: rotate(-180deg);
+        }
+
+
+        h3:hover ~ span#tooltip {
+            opacity: 1;
+            visibility: visible;
+            animation: slide-up 0.4s;
+            animation-duration: 1;
+        }
+
+        @keyframes slide-up {
+            from {
+                margin-top: 20px;
+            }
+
+            to {
+                margin-top: 10px;
+            }
+        }
+    }
+
+
+    div#overview {
+        padding-top: 1.25%;
+
+        div.column {
+            flex: 20%;
+        }
+    }
+
+    div#actions {
+        div.flex {
+            div.column {
+                flex: 25%;
+                height: 15em;
+                cursor: pointer;
+                overflow: hidden;
+
+                h3 {
+                    margin-top: 2.5%;
+                    font-size: 1.2em;
+                }
+            }
+
+            div.column:hover {
+                i {
+                    animation-name: fade-up;
+                    animation-duration: 1s;
+                }
+
+                @keyframes fade-up {
+                    from {
+                        margin-top: 0;
+                        opacity: 1;
+                    }
+
+                    to {
+                        margin-top: -10%;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+}

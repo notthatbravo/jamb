@@ -983,6 +983,160 @@ section.efacility-signup-container form a#temp-dash-link {
     margin-bottom: 10%;
   }
 }
+section.efacility-dashboard-container {
+  padding: 0;
+  background: #e8e9eb;
+}
+section.efacility-dashboard-container h2 {
+  all: unset;
+}
+section.efacility-dashboard-container header {
+  all: unset;
+  display: block;
+  width: 100%;
+  padding: 1% 5%;
+  background: white;
+  border: 1px solid red;
+  overflow: hidden;
+}
+section.efacility-dashboard-container header a#logo-anchor img {
+  all: unset;
+  display: block;
+  float: left;
+  width: 6em;
+}
+section.efacility-dashboard-container div.parent-container {
+  padding: 5%;
+}
+section.efacility-dashboard-container div.parent-container h1 {
+  margin-bottom: 5%;
+  color: #006633;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+section.efacility-dashboard-container div.parent-container div.flex div.column {
+  display: grid;
+  place-items: center;
+  height: 10em;
+  padding: 2.5% 1.25%;
+  margin: 0 2.5%;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 0 #ccc;
+  background: white;
+  text-align: center;
+}
+section.efacility-dashboard-container div.parent-container div.flex div.column i {
+  color: #990033;
+  font-size: 1.5em;
+}
+section.efacility-dashboard-container div.parent-container div.flex div.column h3 {
+  font-size: 0.9em;
+}
+section.efacility-dashboard-container div.parent-container div.flex div.column h2 {
+  margin-top: 5%;
+  color: #990033;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+section.efacility-dashboard-container div.parent-container div.flex div.column:first-of-type {
+  margin-left: 0;
+}
+section.efacility-dashboard-container div.parent-container div.flex div.column:last-of-type {
+  margin-right: 0;
+}
+section.efacility-dashboard-container div#welcome h2 {
+  font-size: 1.5em;
+}
+section.efacility-dashboard-container div#welcome h2 span {
+  color: #006633;
+  font-size: 100%;
+  font-weight: 400;
+}
+section.efacility-dashboard-container div#welcome h3 {
+  position: relative;
+  font-size: 1em;
+}
+section.efacility-dashboard-container div#welcome h3 span {
+  color: #011627;
+  font-size: 100%;
+  font-weight: 500;
+  cursor: pointer;
+}
+section.efacility-dashboard-container div#welcome h3 span:hover {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+section.efacility-dashboard-container div#welcome span#tooltip {
+  position: absolute;
+  z-index: 1;
+  left: 16%;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: white;
+  background: #011627;
+  font-size: 0.8em;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s;
+}
+section.efacility-dashboard-container div#welcome span#tooltip::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #011627 transparent transparent transparent;
+  transform: rotate(-180deg);
+}
+section.efacility-dashboard-container div#welcome h3:hover ~ span#tooltip {
+  opacity: 1;
+  visibility: visible;
+  animation: slide-up 0.4s;
+  animation-duration: 1;
+}
+@keyframes slide-up {
+  from {
+    margin-top: 20px;
+  }
+  to {
+    margin-top: 10px;
+  }
+}
+section.efacility-dashboard-container div#overview {
+  padding-top: 1.25%;
+}
+section.efacility-dashboard-container div#overview div.column {
+  flex: 20%;
+}
+section.efacility-dashboard-container div#actions div.flex div.column {
+  flex: 25%;
+  height: 15em;
+  cursor: pointer;
+  overflow: hidden;
+}
+section.efacility-dashboard-container div#actions div.flex div.column h3 {
+  margin-top: 2.5%;
+  font-size: 1.2em;
+}
+section.efacility-dashboard-container div#actions div.flex div.column:hover i {
+  animation-name: fade-up;
+  animation-duration: 1s;
+}
+@keyframes fade-up {
+  from {
+    margin-top: 0;
+    opacity: 1;
+  }
+  to {
+    margin-top: -10%;
+    opacity: 0;
+  }
+}
+
 section.support-container {
   padding: 0;
 }
