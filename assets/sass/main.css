@@ -992,18 +992,20 @@ section.efacility-dashboard-container h2 {
 }
 section.efacility-dashboard-container header {
   all: unset;
+  position: fixed;
+  z-index: 1;
   display: block;
   width: 100%;
   padding: 1% 5%;
+  border-bottom: 2px solid #006633;
   background: white;
-  border: 1px solid red;
   overflow: hidden;
 }
 section.efacility-dashboard-container header a#logo-anchor img {
   all: unset;
   display: block;
   float: left;
-  width: 6em;
+  width: 4em;
 }
 section.efacility-dashboard-container div.parent-container {
   padding: 5%;
@@ -1030,13 +1032,14 @@ section.efacility-dashboard-container div.parent-container div.flex div.column i
   font-size: 1.5em;
 }
 section.efacility-dashboard-container div.parent-container div.flex div.column h3 {
+  color: #011627;
   font-size: 0.9em;
+  font-weight: 500;
 }
 section.efacility-dashboard-container div.parent-container div.flex div.column h2 {
   margin-top: 5%;
   color: #990033;
   font-size: 1.3em;
-  font-weight: 500;
 }
 section.efacility-dashboard-container div.parent-container div.flex div.column:first-of-type {
   margin-left: 0;
@@ -1044,11 +1047,14 @@ section.efacility-dashboard-container div.parent-container div.flex div.column:f
 section.efacility-dashboard-container div.parent-container div.flex div.column:last-of-type {
   margin-right: 0;
 }
+section.efacility-dashboard-container div#welcome {
+  padding-top: 10em;
+}
 section.efacility-dashboard-container div#welcome h2 {
   font-size: 1.5em;
 }
 section.efacility-dashboard-container div#welcome h2 span {
-  color: #006633;
+  color: #990033;
   font-size: 100%;
   font-weight: 400;
 }
@@ -1115,26 +1121,30 @@ section.efacility-dashboard-container div#overview div.column {
 section.efacility-dashboard-container div#actions div.flex div.column {
   flex: 25%;
   height: 15em;
-  cursor: pointer;
   overflow: hidden;
 }
 section.efacility-dashboard-container div#actions div.flex div.column h3 {
-  margin-top: 2.5%;
-  font-size: 1.2em;
+  margin-top: 5%;
+  font-size: 1.1em;
 }
-section.efacility-dashboard-container div#actions div.flex div.column:hover i {
-  animation-name: fade-up;
-  animation-duration: 1s;
+section.efacility-dashboard-container div#actions div.flex div.column a {
+  display: inline;
+  width: 30%;
+  margin-top: 5%;
 }
-@keyframes fade-up {
-  from {
-    margin-top: 0;
-    opacity: 1;
-  }
-  to {
-    margin-top: -10%;
-    opacity: 0;
-  }
+section.efacility-dashboard-container div#actions div.flex div.column a button {
+  width: 100%;
+  height: 2em;
+  border: 1px solid #011627;
+  border-radius: 20px;
+  background: transparent;
+  font-size: 0.92em;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+section.efacility-dashboard-container div#actions div.flex div.column a button:hover {
+  color: white;
+  background: #011627;
 }
 
 section.support-container {
