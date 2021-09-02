@@ -206,6 +206,22 @@ section.efacility-dashboard-container {
     div#payment-history {
         overflow-x: scroll;
 
+        input {
+            width: 20em;
+            height: 2.5em;
+            margin-bottom: 2.5%;
+            padding: 0 1.25%;
+            border: 1px solid $very-dark-blue;
+            border-radius: 50px;
+            color: $very-dark-blue;
+            font-weight: 500;
+        }
+
+        ::placeholder {
+            color: $very-dark-blue;
+            font-weight: 100;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
@@ -223,7 +239,7 @@ section.efacility-dashboard-container {
                 }
 
                 td {
-                    padding: 2.5%;
+                    padding: 2.5% 0;
                     border: 1px solid $very-dark-blue;
                     border-collapse: collapse;
                     text-align: center;
@@ -241,6 +257,11 @@ section.efacility-dashboard-container {
                 td.paid {
                     color: $dark-green;
                 }
+            }
+
+
+            tr.hidden {
+                display: none;
             }
         }
     }

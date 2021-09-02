@@ -1151,6 +1151,20 @@ section.efacility-dashboard-container div#actions div.flex div.column a button {
 section.efacility-dashboard-container div#payment-history {
   overflow-x: scroll;
 }
+section.efacility-dashboard-container div#payment-history input {
+  width: 20em;
+  height: 2.5em;
+  margin-bottom: 2.5%;
+  padding: 0 1.25%;
+  border: 1px solid #011627;
+  border-radius: 50px;
+  color: #011627;
+  font-weight: 500;
+}
+section.efacility-dashboard-container div#payment-history ::placeholder {
+  color: #011627;
+  font-weight: 100;
+}
 section.efacility-dashboard-container div#payment-history table {
   width: 100%;
   border-collapse: collapse;
@@ -1165,7 +1179,7 @@ section.efacility-dashboard-container div#payment-history table tr th {
   text-transform: uppercase;
 }
 section.efacility-dashboard-container div#payment-history table tr td {
-  padding: 2.5%;
+  padding: 2.5% 0;
   border: 1px solid #011627;
   border-collapse: collapse;
   text-align: center;
@@ -1179,6 +1193,9 @@ section.efacility-dashboard-container div#payment-history table tr td.pending {
 }
 section.efacility-dashboard-container div#payment-history table tr td.paid {
   color: #006633;
+}
+section.efacility-dashboard-container div#payment-history table tr.hidden {
+  display: none;
 }
 
 section.support-container {
