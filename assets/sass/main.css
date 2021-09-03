@@ -1197,6 +1197,41 @@ section.efacility-dashboard-container div#payment-history table tr td.paid {
 section.efacility-dashboard-container div#payment-history table tr.hidden {
   display: none;
 }
+section.efacility-dashboard-container div#forecast {
+  padding: 0;
+  padding-top: 5%;
+  margin: 5%;
+  border-top: 5px solid #006633;
+}
+section.efacility-dashboard-container div#forecast div.column {
+  flex: 10%;
+}
+section.efacility-dashboard-container div#forecast div.column h3 {
+  margin-top: 5%;
+}
+section.efacility-dashboard-container div#calculator div.flex div.column {
+  all: unset;
+}
+section.efacility-dashboard-container div#calculator div.flex div#o-level {
+  flex: 50%;
+}
+section.efacility-dashboard-container div#calculator div.flex div#o-level div.flex {
+  margin: 5% 0;
+}
+section.efacility-dashboard-container div#calculator div.flex div#o-level div.flex input,
+section.efacility-dashboard-container div#calculator div.flex div#o-level div.flex select {
+  display: block;
+  width: 20em;
+  height: 3em;
+  padding: 0 2.5%;
+  border: 1px solid #011627;
+  border-radius: 10px;
+  background: transparent;
+}
+section.efacility-dashboard-container div#calculator div.flex div#o-level div.flex select {
+  width: 3em;
+  padding: 0;
+}
 
 section.support-container {
   padding: 0;

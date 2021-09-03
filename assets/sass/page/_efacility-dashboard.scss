@@ -265,4 +265,53 @@ section.efacility-dashboard-container {
             }
         }
     }
+
+
+    div#forecast {
+        padding: 0;
+        padding-top: 5%;
+        margin: 5%;
+        border-top: 5px solid $dark-green;
+
+        div.column {
+            flex: 10%;
+
+            h3 {
+                margin-top: 5%;
+            }
+        }
+    }
+
+
+    div#calculator {
+        div.flex {
+            div.column {
+                all: unset;
+            }
+
+            div#o-level {
+                flex: 50%;
+
+                div.flex {
+                    margin: 5% 0;
+
+                    input,
+                    select {
+                        display: block;
+                        width: 20em;
+                        height: 3em;
+                        padding: 0 2.5%;
+                        border: 1px solid $very-dark-blue;
+                        border-radius: 10px;
+                        background: transparent;
+                    }
+
+                    select {
+                        width: 3em;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
 }
