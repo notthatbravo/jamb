@@ -121,50 +121,17 @@ section.efacility-dashboard-container {
             }
         }
 
-        span#tooltip {
-            position: absolute;
-            z-index: 1;
+        span.tooltip {
             left: 16%;
             margin-top: 10px;
-            padding: 5px 10px;
-            border-radius: 10px;
-            color: white;
-            background: $very-dark-blue;
-            font-size: 0.8em;
-            text-align: center;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.4s;
-        }
-
-        span#tooltip::before {
-            content: "";
-            position: absolute;
-            top: -30%;
-            left: 50%;
-            margin-left: -5px;
-            border-width: 5px;
-            border-style: solid;
-            border-color: $very-dark-blue transparent transparent transparent;
-            transform: rotate(-180deg);
         }
 
 
-        h3:hover ~ span#tooltip {
+        h3:hover ~ span.tooltip {
             opacity: 1;
             visibility: visible;
             animation: slide-up 0.4s;
             animation-duration: 1;
-        }
-
-        @keyframes slide-up {
-            from {
-                margin-top: 20px;
-            }
-
-            to {
-                margin-top: 10px;
-            }
         }
     }
 
@@ -267,7 +234,7 @@ section.efacility-dashboard-container {
     }
 
 
-    div#forecast {
+    div#stats {
         padding: 0;
         padding-top: 5%;
         margin: 5%;
@@ -286,30 +253,129 @@ section.efacility-dashboard-container {
     div#calculator {
         div.flex {
             div.column {
-                all: unset;
+                // all: unset;
+                display: block;
+                flex: 50%;
+                width: unset;
+                height: unset;
+                margin: unset;
+                border: unset;
+                padding: unset;
+                margin: unset;
+                box-shadow: unset;
+                border-radius: unset;
+                background: none;
+                text-align: left;
+
+                h2 {
+                    display: block;
+                    margin: 0;
+                    margin-bottom: 10%;
+                }
             }
 
             div#o-level {
-                flex: 50%;
+                padding-right: 10%;
+                border-right: 3px solid $dark-green;
 
                 div.flex {
-                    margin: 5% 0;
+                    margin: 2.5% 0;
+
+                    span {
+                        flex: 1%;
+                        padding-top: 10px;
+                    }
 
                     input,
                     select {
                         display: block;
-                        width: 20em;
                         height: 3em;
-                        padding: 0 2.5%;
+                        padding: 0 1.25%;
                         border: 1px solid $very-dark-blue;
                         border-radius: 10px;
                         background: transparent;
                     }
 
-                    select {
-                        width: 3em;
-                        padding: 0;
+                    input {
+                        margin: 0 2.5%;
+                        flex: 70%;
                     }
+
+                    select {
+                        flex: 20%;
+                        width: 5em;
+                        padding: 0 5px;
+                    }
+                }
+            }
+
+            div#putme-results {
+                padding-left: 10%;
+
+                div#putme {
+                    padding-bottom: 20%;
+                    border-bottom: 4px solid $dark-green;
+
+                    div#score-container {
+                        width: 70%;
+                        height: 3em;
+                        border: 1px solid $very-dark-blue;
+                        border-radius: 10px;
+                        overflow: hidden;
+
+                        input {
+                            all: unset;
+                            display: inline-block;
+                            flex: 80%;
+                            height: 100%;
+                            padding-left: 5%;
+                        }
+
+                        span {
+                            display: grid;
+                            place-items: center;
+                            flex: 10%;
+                            height: 100%;
+                            color: white;
+                            background-color: $very-dark-blue;
+                            font-size: 1.4em;
+                            font-weight: 600;
+                        }
+
+                    }
+
+                    span.tooltip {
+                        left: 76%;
+                        margin-top: 10px;
+                    }
+
+                    div:hover ~ span.tooltip {
+                        opacity: 1;
+                        visibility: visible;
+                        animation: slide-up 0.4s;
+                        animation-duration: 1;
+                    }
+
+                    input[type=checkbox] {
+                        width: 1em;
+                        height: 1em;
+                        margin-top: 10%;
+
+                    }
+
+                    label {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            div#results {
+                display: grid;
+                place-items: center;
+                height: 20em;
+
+                h2 {
+                    font-size: 6em;
                 }
             }
         }

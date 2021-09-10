@@ -7,6 +7,16 @@
 	border-radius: 5px;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 section {
     padding: 5%;
     padding-top: 10em;
@@ -19,6 +29,42 @@ section {
         text-decoration: overline;
         text-decoration-color: $wine;
     }
+
+	span.tooltip {
+		position: absolute;
+		z-index: 1;
+		padding: 5px 10px;
+		border-radius: 10px;
+		color: white;
+		background: $very-dark-blue;
+		font-size: 0.8em;
+		text-align: center;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.4s;
+	}
+
+	span.tooltip::before {
+		content: "";
+		position: absolute;
+		top: -30%;
+		left: 50%;
+		margin-left: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: $very-dark-blue transparent transparent transparent;
+		transform: rotate(-180deg);
+	}
+
+	@keyframes slide-up {
+		from {
+			margin-top: 20px;
+		}
+
+		to {
+			margin-top: 10px;
+		}
+	}
 }
 
 
